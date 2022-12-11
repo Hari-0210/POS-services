@@ -1,0 +1,14 @@
+{
+  "name": "POS Api documentation",
+  "version": "1.0.0",
+  "description": "Documentation for the REST api",
+  "title": "POS ApiDoc",
+  "url": "http://localhost:8500",
+  "sampleUrl": "http://localhost:8500",
+  "defaultVersion": "1.0.0",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true,
+    "aloneDisplay": false
+  }
+}
