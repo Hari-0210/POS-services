@@ -1,1 +1,3 @@
-exports.responseMessages = {};
+exports.responseMessages = {
+    userNotFound: "User Not Found"
+};

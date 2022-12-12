@@ -4,6 +4,8 @@ var con = mysql.createConnection(mySQLconfig);
 module.exports.db = () => {
   con.connect(function (err) {
     if (err) throw err;
-    console.log("Connected!");
+    console.log("Connected to DB");
   });
 };
+exports.con = con;
+

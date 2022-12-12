@@ -1,7 +1,6 @@
 const { noAuthRequired } = require("../config");
 const { responseMessages } = require("../utilities/messages");
 const { jwtDecode } = require("./jwtToken");
-
 module.exports = {
   isAuthenticated: async (req, res, next) => {
     try {

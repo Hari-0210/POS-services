@@ -2,7 +2,7 @@ const dbConfig = require("./general");
 const env = () => {
   return {
     saltRounds: 10,
-    jwtPrivateKey: "Hi",
+    jwtPrivateKey: "gibigo",
     endpoint: "/api/v1",
     port: 8500,
     mySQLconfig: {
@@ -16,5 +16,5 @@ const env = () => {
 };
 module.exports = {
   ...env(),
-  noAuthRequired: ["/api/v1/login", "/api/v1/test"],
+  noAuthRequired: ["/api/v1/login", "/api/v1/addUser"],
 };

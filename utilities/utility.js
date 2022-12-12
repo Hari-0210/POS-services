@@ -1,10 +1,8 @@
 const moment = require("moment");
 
 exports.mysqlResponseHandler = function (records) {
-  let rows = [];
-  if (records && records.recordsets && records.recordsets.length) {
-    rows = records.recordsets;
-  }
+  let rows = {};
+  rows = {...records[0]};
   return rows;
 };
 exports.mysqlSingleResponseHandler = function (records) {
@@ -21,3 +19,7 @@ exports.mysqlSingleObjResponseHandler = function (records) {
   }
   return rows;
 };
+
+exports.parseSqlResult = function () {
+  return JSON.parse(JSON.stringify(this[0]))
+}
