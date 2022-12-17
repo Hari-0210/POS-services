@@ -1,10 +1,9 @@
 let dbConfig = {};
 dbConfig = {
-  host: "localhost",
-  port: "3306",
-  database: "posdb",
-  user: "Hari",
-  password: "Hari@msec1",
+  host: "bom1plzcpnl493931.prod.bom1.secureserver.net",
+  user: "GuruPOS",
+  password: "GuruPOS",
+  database: "POSDB_DEV"
 };
 module.exports = {
   ...dbConfig,

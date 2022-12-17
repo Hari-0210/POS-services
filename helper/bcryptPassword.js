@@ -20,7 +20,7 @@ exports.verifyPassword = (password, hash) => {
       if (result) {
         resolve(result);
       } else {
-        reject({ message: "Incorrect" });
+        reject({ message: "Password Incorrect" });
       }
     });
   });

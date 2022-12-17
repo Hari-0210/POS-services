@@ -16,5 +16,5 @@ const env = () => {
 };
 module.exports = {
   ...env(),
-  noAuthRequired: ["/api/v1/login", "/api/v1/addUser"],
+  noAuthRequired: ["/api/v1/login", "/api/v1/test"],
 };
