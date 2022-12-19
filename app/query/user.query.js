@@ -1,3 +1,3 @@
 module.exports = {
-    login: (userName) => `Select * from userdetails where userName = '${userName}'`,
+    login: (userName) => `Select * from userDetails where userName = '${userName}'`,
 }

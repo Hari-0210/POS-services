@@ -5,8 +5,8 @@ const query = async (QUERY) => {
     return new Promise((res, rej) => {
             con.query(QUERY, function (err, result) {
                 if (err) {
-                    console.log("hi1");
                     rej(err)
+                    console.log(err);
                     throw err;
                 }
                 res(result);

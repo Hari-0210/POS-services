@@ -1131,3 +1131,1216 @@
   ],
   timestamp: '2022-12-17 22:50:59'
 }
+{
+  error: Error: ER_NO_SUCH_TABLE: Table 'POSDB_DEV.userdetails' doesn't exist
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Connection.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:198:25)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.login (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\user.ctrl.js:25:32)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlMessage: "Table 'POSDB_DEV.userdetails' doesn't exist",
+    sqlState: '42S02',
+    index: 0,
+    sql: "Select * from userdetails where userName = 'admin'"
+  },
+  level: 'error',
+  message: "uncaughtException: ER_NO_SUCH_TABLE: Table 'POSDB_DEV.userdetails' doesn't exist\n" +
+    "Error: ER_NO_SUCH_TABLE: Table 'POSDB_DEV.userdetails' doesn't exist\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Connection.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:198:25)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.login (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:25:32)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: "Error: ER_NO_SUCH_TABLE: Table 'POSDB_DEV.userdetails' doesn't exist\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Connection.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:198:25)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.login (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:25:32)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Sat Dec 17 2022 23:04:35 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 7396,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 54464512,
+      heapTotal: 31256576,
+      heapUsed: 15806248,
+      external: 3738061,
+      arrayBuffers: 160886
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 171017 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 25,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'Connection.query',
+      line: 198,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 32,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js',
+      function: 'module.exports.login',
+      line: 25,
+      method: 'login',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-17 23:04:35'
+}
+{
+  error: Error: ER_NO_SUCH_TABLE: Table 'POSDB_DEV.userdetails' doesn't exist
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Connection.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:198:25)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.login (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\user.ctrl.js:25:32)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlMessage: "Table 'POSDB_DEV.userdetails' doesn't exist",
+    sqlState: '42S02',
+    index: 0,
+    sql: "Select * from userdetails where userName = 'admin'"
+  },
+  level: 'error',
+  message: "uncaughtException: ER_NO_SUCH_TABLE: Table 'POSDB_DEV.userdetails' doesn't exist\n" +
+    "Error: ER_NO_SUCH_TABLE: Table 'POSDB_DEV.userdetails' doesn't exist\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Connection.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:198:25)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.login (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:25:32)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: "Error: ER_NO_SUCH_TABLE: Table 'POSDB_DEV.userdetails' doesn't exist\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Connection.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:198:25)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.login (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:25:32)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Sat Dec 17 2022 23:05:04 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 17064,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 45002752,
+      heapTotal: 16314368,
+      heapUsed: 14897920,
+      external: 1072712,
+      arrayBuffers: 139245
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 171046 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 25,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'Connection.query',
+      line: 198,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 32,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js',
+      function: 'module.exports.login',
+      line: 25,
+      method: 'login',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-17 23:05:04'
+}
+{
+  error: Error: ER_NO_SUCH_TABLE: Table 'POSDB_DEV.userdetails' doesn't exist
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Connection.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:198:25)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.login (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\user.ctrl.js:25:32)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlMessage: "Table 'POSDB_DEV.userdetails' doesn't exist",
+    sqlState: '42S02',
+    index: 0,
+    sql: "Select * from userdetails where userName = 'admin'"
+  },
+  level: 'error',
+  message: "uncaughtException: ER_NO_SUCH_TABLE: Table 'POSDB_DEV.userdetails' doesn't exist\n" +
+    "Error: ER_NO_SUCH_TABLE: Table 'POSDB_DEV.userdetails' doesn't exist\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Connection.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:198:25)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.login (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:25:32)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: "Error: ER_NO_SUCH_TABLE: Table 'POSDB_DEV.userdetails' doesn't exist\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Connection.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:198:25)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.login (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:25:32)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Sat Dec 17 2022 23:05:55 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 6052,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 55017472,
+      heapTotal: 31518720,
+      heapUsed: 15975024,
+      external: 3738061,
+      arrayBuffers: 175040
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 171097 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 25,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'Connection.query',
+      line: 198,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 32,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js',
+      function: 'module.exports.login',
+      line: 25,
+      method: 'login',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-17 23:05:55'
+}
+{
+  error: Error: Connection lost: The server closed the connection.
+      at Protocol.end (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:94:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    fatal: true,
+    code: 'PROTOCOL_CONNECTION_LOST'
+  },
+  level: 'error',
+  message: 'uncaughtException: Connection lost: The server closed the connection.\n' +
+    'Error: Connection lost: The server closed the connection.\n' +
+    '    at Protocol.end (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:112:13)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:94:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:539:35)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1345:12)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:83:21)',
+  stack: 'Error: Connection lost: The server closed the connection.\n' +
+    '    at Protocol.end (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:112:13)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:94:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:539:35)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1345:12)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:83:21)',
+  exception: true,
+  date: 'Sat Dec 17 2022 23:07:39 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 6840,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41365504,
+      heapTotal: 17100800,
+      heapUsed: 14718464,
+      external: 977707,
+      arrayBuffers: 109776
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 171201 },
+  trace: [
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.end',
+      line: 112,
+      method: 'end',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 94,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 35,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 539,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'endReadableNT',
+      line: 1345,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 83,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-17 23:07:39'
+}
+{
+  error: Error: Connection lost: The server closed the connection.
+      at Protocol.end (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:94:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    fatal: true,
+    code: 'PROTOCOL_CONNECTION_LOST'
+  },
+  level: 'error',
+  message: 'uncaughtException: Connection lost: The server closed the connection.\n' +
+    'Error: Connection lost: The server closed the connection.\n' +
+    '    at Protocol.end (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:112:13)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:94:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:539:35)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1345:12)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:83:21)',
+  stack: 'Error: Connection lost: The server closed the connection.\n' +
+    '    at Protocol.end (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:112:13)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:94:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:539:35)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1345:12)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:83:21)',
+  exception: true,
+  date: 'Sat Dec 17 2022 23:11:51 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 1484,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41824256,
+      heapTotal: 17100800,
+      heapUsed: 14698216,
+      external: 976438,
+      arrayBuffers: 108507
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 171453 },
+  trace: [
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.end',
+      line: 112,
+      method: 'end',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 94,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 35,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 539,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'endReadableNT',
+      line: 1345,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 83,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-17 23:11:51'
+}
+{
+  error: Error: Connection lost: The server closed the connection.
+      at Protocol.end (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:94:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    fatal: true,
+    code: 'PROTOCOL_CONNECTION_LOST'
+  },
+  level: 'error',
+  message: 'uncaughtException: Connection lost: The server closed the connection.\n' +
+    'Error: Connection lost: The server closed the connection.\n' +
+    '    at Protocol.end (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:112:13)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:94:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:539:35)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1345:12)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:83:21)',
+  stack: 'Error: Connection lost: The server closed the connection.\n' +
+    '    at Protocol.end (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:112:13)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:94:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:539:35)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1345:12)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:83:21)',
+  exception: true,
+  date: 'Sun Dec 18 2022 10:10:02 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 18144,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41451520,
+      heapTotal: 16576512,
+      heapUsed: 13899608,
+      external: 974620,
+      arrayBuffers: 106689
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 2757 },
+  trace: [
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.end',
+      line: 112,
+      method: 'end',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 94,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 35,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 539,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'endReadableNT',
+      line: 1345,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 83,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-18 10:10:02'
+}
+{
+  error: Error: Connection lost: The server closed the connection.
+      at Protocol.end (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:112:13)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:94:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+    fatal: true,
+    code: 'PROTOCOL_CONNECTION_LOST'
+  },
+  level: 'error',
+  message: 'uncaughtException: Connection lost: The server closed the connection.\n' +
+    'Error: Connection lost: The server closed the connection.\n' +
+    '    at Protocol.end (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:112:13)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:94:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:539:35)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1345:12)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:83:21)',
+  stack: 'Error: Connection lost: The server closed the connection.\n' +
+    '    at Protocol.end (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:112:13)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:94:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:539:35)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1345:12)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:83:21)',
+  exception: true,
+  date: 'Sun Dec 18 2022 10:12:42 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 7736,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 45998080,
+      heapTotal: 16838656,
+      heapUsed: 14230576,
+      external: 974990,
+      arrayBuffers: 107059
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 2917 },
+  trace: [
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.end',
+      line: 112,
+      method: 'end',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 94,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 35,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 539,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'endReadableNT',
+      line: 1345,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 83,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-18 10:12:42'
+}
+{
+  error: TypeError: con.connect is not a function
+      at module.exports.db (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\config\mysqldb.js:5:7)
+      at Server.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js:18:9)
+      at Object.onceWrapper (node:events:641:28)
+      at Server.emit (node:events:527:28)
+      at emitListeningNT (node:net:1406:10)
+      at processTicksAndRejections (node:internal/process/task_queues:82:21),
+  level: 'error',
+  message: 'uncaughtException: con.connect is not a function\n' +
+    'TypeError: con.connect is not a function\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  stack: 'TypeError: con.connect is not a function\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  exception: true,
+  date: 'Sun Dec 18 2022 10:14:50 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 14776,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 54657024,
+      heapTotal: 31256576,
+      heapUsed: 15075984,
+      external: 1598048,
+      arrayBuffers: 90094
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 3046 },
+  trace: [
+    {
+      column: 7,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js',
+      function: 'module.exports.db',
+      line: 5,
+      method: 'db',
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Object.onceWrapper',
+      line: 641,
+      method: 'onceWrapper',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Server.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:net',
+      function: 'emitListeningNT',
+      line: 1406,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 82,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-18 10:14:50'
+}
