@@ -10,7 +10,7 @@ const Joi = require('joi');
 const moment = require('moment');
 const { query } = require('../../helper/executequery');
 const { responseHandler } = require('../../utilities');
-const { login } = require('../query/user.query');
+const { login,getUser, getUserQuery } = require('../query/user.query');
 const { addUserSP } = require('../services/user.services');
 
 
@@ -23,7 +23,8 @@ module.exports.login = async (req, res) => {
         try {
             await loginSchema.validateAsync(req.body);
             const resp = await query(login(req.body.userName));       
-            const rows = mysqlResponseHandler(resp);
+            const rows = mysqlSingleResponseHandler(resp);
+            console.log(rows);
             if (!Object.keys(rows).length) {
                 responseHandler.errorResponse(
                     res,
@@ -61,6 +62,7 @@ module.exports.addUser = async (req, res) => {
             var pass;
             pass = req.body.password;
             req.body.password = await passwordHash(req.body.password);
+            req.body.roleID = 2;
             const resp = await addUserSP(req.body);       
             console.log(resp);
             const user = await query(
@@ -73,6 +75,22 @@ module.exports.addUser = async (req, res) => {
         } catch (err) {
             responseHandler.errorResponse(res, err.message, err.message);
         }
+    } catch (err) {
+        responseHandler.errorResponse(res, err.message, commonErrorMessage);
+    }
+};
+
+module.exports.getUser = async (req, res) => {
+    try {
+        const resp = await query(getUserQuery);
+        let list = mysqlResponseHandler(resp);
+        console.log(resp);
+        responseHandler.successResponse(
+            res,
+            list,
+            responseMessages.getUser
+        );
+        
     } catch (err) {
         responseHandler.errorResponse(res, err.message, commonErrorMessage);
     }

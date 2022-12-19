@@ -2,6 +2,7 @@
 const { con } = require("../config/mysqldb")
 
 const query = async (QUERY) => {
+    console.log(QUERY);
     return new Promise((res, rej) => {
             con.query(QUERY, function (err, result) {
                 if (err) {

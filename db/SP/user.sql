@@ -1,7 +1,9 @@
-CREATE PROCEDURE create_user (IN userName varchar(255),IN password varchar(255))
+CREATE PROCEDURE create_user (IN userName varchar(255),IN password varchar(255),IN roleID int)
 BEGIN
-    insert into userDetails (userName,password) values (userName,password);
+    insert into userDetails (userName,password,roleID) values (userName,password,roleID);
 END
+
+
 
 
 CREATE TABLE `userDetails` (

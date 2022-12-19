@@ -2344,3 +2344,2880 @@
   ],
   timestamp: '2022-12-18 10:14:50'
 }
+{
+  error: Error: Handshake inactivity timeout
+      at Handshake.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+      at Handshake.emit (node:events:527:28)
+      at Handshake._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+      at Timer._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Timer.js:32:23)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:202:8)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.login (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\user.ctrl.js:25:32)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'PROTOCOL_SEQUENCE_TIMEOUT',
+    fatal: true,
+    timeout: 10000
+  },
+  level: 'error',
+  message: 'uncaughtException: Handshake inactivity timeout\n' +
+    'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:202:8)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.login (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:25:32)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: 'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:202:8)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.login (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:25:32)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Mon Dec 19 2022 16:21:19 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 18456,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 40214528,
+      heapTotal: 16576512,
+      heapUsed: 14736776,
+      external: 1066966,
+      arrayBuffers: 41153
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 111434 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Handshake.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Handshake._onTimeout',
+      line: 124,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js',
+      function: 'Timer._onTimeout',
+      line: 32,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/timers',
+      function: 'listOnTimeout',
+      line: 559,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/timers',
+      function: 'processTimers',
+      line: 502,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 202,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 32,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js',
+      function: 'module.exports.login',
+      line: 25,
+      method: 'login',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-19 16:21:19'
+}
+{
+  error: ReferenceError: getUser is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:8:24)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: getUser is not defined\n' +
+    'ReferenceError: getUser is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:8:24)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: getUser is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:8:24)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Mon Dec 19 2022 23:22:55 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 12940,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 52301824,
+      heapTotal: 30732288,
+      heapUsed: 21218592,
+      external: 1583827,
+      arrayBuffers: 682541
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 136729 },
+  trace: [
+    {
+      column: 24,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 8,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-19 23:22:55'
+}
+{
+  error: ReferenceError: getUser is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:8:24)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: getUser is not defined\n' +
+    'ReferenceError: getUser is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:8:24)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: getUser is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:8:24)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Mon Dec 19 2022 23:23:28 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 20044,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 51744768,
+      heapTotal: 30994432,
+      heapUsed: 21234296,
+      external: 1583827,
+      arrayBuffers: 682541
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 136763 },
+  trace: [
+    {
+      column: 24,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 8,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-19 23:23:28'
+}
+{
+  error: Error: ER_EMPTY_QUERY: Query was empty
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.getUser (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\user.ctrl.js:83:28)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5)
+      at next (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:144:13)
+      at Route.dispatch (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:114:3)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\index.js:284:15 {
+    code: 'ER_EMPTY_QUERY',
+    errno: 1065,
+    sqlMessage: 'Query was empty',
+    sqlState: '42000',
+    index: 0,
+    sql: undefined
+  },
+  level: 'error',
+  message: 'uncaughtException: ER_EMPTY_QUERY: Query was empty\n' +
+    'Error: ER_EMPTY_QUERY: Query was empty\n' +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.getUser (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:83:28)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:284:15',
+  stack: 'Error: ER_EMPTY_QUERY: Query was empty\n' +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.getUser (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:83:28)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:284:15',
+  exception: true,
+  date: 'Mon Dec 19 2022 23:23:41 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 17640,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 52842496,
+      heapTotal: 32043008,
+      heapUsed: 15701112,
+      external: 3745880,
+      arrayBuffers: 49982
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 136776 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js',
+      function: 'module.exports.getUser',
+      line: 83,
+      method: 'getUser',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'next',
+      line: 144,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.dispatch',
+      line: 114,
+      method: 'dispatch',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js',
+      function: null,
+      line: 284,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-19 23:23:41'
+}
+{
+  error: Error: ER_EMPTY_QUERY: Query was empty
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.getUser (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\user.ctrl.js:83:28)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5)
+      at next (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:144:13)
+      at Route.dispatch (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:114:3)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\index.js:284:15 {
+    code: 'ER_EMPTY_QUERY',
+    errno: 1065,
+    sqlMessage: 'Query was empty',
+    sqlState: '42000',
+    index: 0,
+    sql: undefined
+  },
+  level: 'error',
+  message: 'uncaughtException: ER_EMPTY_QUERY: Query was empty\n' +
+    'Error: ER_EMPTY_QUERY: Query was empty\n' +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.getUser (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:83:28)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:284:15',
+  stack: 'Error: ER_EMPTY_QUERY: Query was empty\n' +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.getUser (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:83:28)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:284:15',
+  exception: true,
+  date: 'Mon Dec 19 2022 23:24:58 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 20960,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 43130880,
+      heapTotal: 16838656,
+      heapUsed: 15154472,
+      external: 1064459,
+      arrayBuffers: 130992
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 136852 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js',
+      function: 'module.exports.getUser',
+      line: 83,
+      method: 'getUser',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'next',
+      line: 144,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.dispatch',
+      line: 114,
+      method: 'dispatch',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js',
+      function: null,
+      line: 284,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-19 23:24:58'
+}
+{
+  error: Error: ER_EMPTY_QUERY: Query was empty
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.getUser (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\user.ctrl.js:83:28)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5)
+      at next (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:144:13)
+      at Route.dispatch (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:114:3)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\index.js:284:15 {
+    code: 'ER_EMPTY_QUERY',
+    errno: 1065,
+    sqlMessage: 'Query was empty',
+    sqlState: '42000',
+    index: 0,
+    sql: undefined
+  },
+  level: 'error',
+  message: 'uncaughtException: ER_EMPTY_QUERY: Query was empty\n' +
+    'Error: ER_EMPTY_QUERY: Query was empty\n' +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.getUser (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:83:28)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:284:15',
+  stack: 'Error: ER_EMPTY_QUERY: Query was empty\n' +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.getUser (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:83:28)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:284:15',
+  exception: true,
+  date: 'Mon Dec 19 2022 23:25:31 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 20184,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 54038528,
+      heapTotal: 31518720,
+      heapUsed: 16418168,
+      external: 1703581,
+      arrayBuffers: 186212
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 136886 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js',
+      function: 'module.exports.getUser',
+      line: 83,
+      method: 'getUser',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'next',
+      line: 144,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.dispatch',
+      line: 114,
+      method: 'dispatch',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js',
+      function: null,
+      line: 284,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-19 23:25:31'
+}
+{
+  error: Error: ER_EMPTY_QUERY: Query was empty
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:7:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:12)
+      at module.exports.getUser (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\user.ctrl.js:83:28)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5)
+      at next (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:144:13)
+      at Route.dispatch (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:114:3)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\index.js:284:15 {
+    code: 'ER_EMPTY_QUERY',
+    errno: 1065,
+    sqlMessage: 'Query was empty',
+    sqlState: '42000',
+    index: 0,
+    sql: undefined
+  },
+  level: 'error',
+  message: 'uncaughtException: ER_EMPTY_QUERY: Query was empty\n' +
+    'Error: ER_EMPTY_QUERY: Query was empty\n' +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:7:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:12)\n' +
+    '    at module.exports.getUser (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:83:28)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:284:15',
+  stack: 'Error: ER_EMPTY_QUERY: Query was empty\n' +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:7:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:12)\n' +
+    '    at module.exports.getUser (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:83:28)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:284:15',
+  exception: true,
+  date: 'Mon Dec 19 2022 23:26:13 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 17192,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 53444608,
+      heapTotal: 31780864,
+      heapUsed: 20988888,
+      external: 3745880,
+      arrayBuffers: 656623
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 136928 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js',
+      function: 'module.exports.getUser',
+      line: 83,
+      method: 'getUser',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'next',
+      line: 144,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.dispatch',
+      line: 114,
+      method: 'dispatch',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js',
+      function: null,
+      line: 284,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-19 23:26:14'
+}
+{
+  error: ReferenceError: addProductCategory is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:9:36)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: addProductCategory is not defined\n' +
+    'ReferenceError: addProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:9:36)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: addProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:9:36)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Tue Dec 20 2022 00:17:00 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 10876,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 49950720,
+      heapTotal: 31256576,
+      heapUsed: 19992664,
+      external: 3620806,
+      arrayBuffers: 625993
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 139974 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-20 00:17:00'
+}
+{
+  error: ReferenceError: addProductCategory is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:9:36)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: addProductCategory is not defined\n' +
+    'ReferenceError: addProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:9:36)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: addProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:9:36)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Tue Dec 20 2022 00:17:34 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 21556,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 50065408,
+      heapTotal: 31256576,
+      heapUsed: 19693432,
+      external: 3620806,
+      arrayBuffers: 589447
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 140009 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-20 00:17:34'
+}
+{
+  error: ReferenceError: addProductCategory is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:9:36)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: addProductCategory is not defined\n' +
+    'ReferenceError: addProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:9:36)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: addProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:9:36)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Tue Dec 20 2022 00:18:03 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 24156,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 50536448,
+      heapTotal: 31256576,
+      heapUsed: 19905560,
+      external: 3620806,
+      arrayBuffers: 616708
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 140037 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-20 00:18:03'
+}
+{
+  error: ReferenceError: addProductCategory is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:9:36)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: addProductCategory is not defined\n' +
+    'ReferenceError: addProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:9:36)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: addProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:9:36)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Tue Dec 20 2022 00:18:23 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 23640,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 51286016,
+      heapTotal: 31256576,
+      heapUsed: 21314632,
+      external: 1578507,
+      arrayBuffers: 677221
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 140058 },
+  trace: [
+    {
+      column: 36,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-20 00:18:23'
+}
+{
+  error: ReferenceError: deleteProductCategory is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:13:41)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: deleteProductCategory is not defined\n' +
+    'ReferenceError: deleteProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:13:41)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: deleteProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:13:41)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Tue Dec 20 2022 00:40:50 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 1756,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 49106944,
+      heapTotal: 31518720,
+      heapUsed: 18053136,
+      external: 3620806,
+      arrayBuffers: 397756
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 141404 },
+  trace: [
+    {
+      column: 41,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 13,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-20 00:40:50'
+}
+{
+  error: ReferenceError: deleteProductCategory is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:13:41)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: deleteProductCategory is not defined\n' +
+    'ReferenceError: deleteProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:13:41)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: deleteProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:13:41)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Tue Dec 20 2022 00:42:46 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 19060,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 49549312,
+      heapTotal: 32043008,
+      heapUsed: 18386664,
+      external: 3620806,
+      arrayBuffers: 397756
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 141521 },
+  trace: [
+    {
+      column: 41,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 13,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-20 00:42:46'
+}
+{
+  error: C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\query\product.query.js:5
+      deleteProductCategoryQuery:(productCategoryID)=>`Delete from productCategory where productCategoryID = ${productCategoryID}`
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  
+  SyntaxError: Unexpected identifier
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+      at Module._compile (node:internal/modules/cjs/loader:1069:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\product.ctrl.js:6:89)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14),
+  level: 'error',
+  message: 'uncaughtException: Unexpected identifier\n' +
+    'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\query\\product.query.js:5\n' +
+    '    deleteProductCategoryQuery:(productCategoryID)=>`Delete from productCategory where productCategoryID = ${productCategoryID}`\n' +
+    '    ^^^^^^^^^^^^^^^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Unexpected identifier\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1033:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1069:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\product.ctrl.js:6:89)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)',
+  stack: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\query\\product.query.js:5\n' +
+    '    deleteProductCategoryQuery:(productCategoryID)=>`Delete from productCategory where productCategoryID = ${productCategoryID}`\n' +
+    '    ^^^^^^^^^^^^^^^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Unexpected identifier\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1033:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1069:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\product.ctrl.js:6:89)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)',
+  exception: true,
+  date: 'Tue Dec 20 2022 00:44:11 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 18224,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 47849472,
+      heapTotal: 30208000,
+      heapUsed: 17762680,
+      external: 3211882,
+      arrayBuffers: 535882
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 141606 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1033,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1069,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 89,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\product.ctrl.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-20 00:44:11'
+}
+{
+  error: ReferenceError: deleteProductCategory is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:13:41)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: deleteProductCategory is not defined\n' +
+    'ReferenceError: deleteProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:13:41)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: deleteProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:13:41)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Tue Dec 20 2022 00:44:23 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 2372,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 49205248,
+      heapTotal: 31780864,
+      heapUsed: 18297504,
+      external: 3620806,
+      arrayBuffers: 397756
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 141618 },
+  trace: [
+    {
+      column: 41,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 13,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-20 00:44:23'
+}
+{
+  error: ReferenceError: deleteProductCategory is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:13:41)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: deleteProductCategory is not defined\n' +
+    'ReferenceError: deleteProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:13:41)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: deleteProductCategory is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:13:41)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Tue Dec 20 2022 00:44:46 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 15304,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 49504256,
+      heapTotal: 32043008,
+      heapUsed: 18373200,
+      external: 3620806,
+      arrayBuffers: 397756
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 141641 },
+  trace: [
+    {
+      column: 41,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 13,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-20 00:44:46'
+}
