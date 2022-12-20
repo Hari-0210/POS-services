@@ -11,7 +11,9 @@ const {
   getProductCategoryQuery,
   updateProductCategoryQuery,
   deleteProductCategoryQuery,
+  getProductQuery,
 } = require("../query/product.query");
+const { addProductSP } = require("../services/product.services");
 
 module.exports.addProductCategory = async (req, res) => {
   try {
@@ -40,26 +42,29 @@ module.exports.addProductCategory = async (req, res) => {
 };
 
 exports.getProductCategory = async (req, res) => {
+  try {
+    const productCategorySchema = Joi.object({
+      searchText: Joi.string().allow(""),
+    });
+
     try {
-        const productCategorySchema = Joi.object({
-            searchText: Joi.string().allow('')
-        });
-
-        try {
-            await productCategorySchema.validateAsync(req.body);
-        } catch (err) {
-            responseHandler.errorResponse(res, err.message, err.message);
-            return false;
-        }
-
-        const resp = await query(getProductCategoryQuery(req.body.searchText));
-        let list = mysqlResponseHandler(resp);
-        responseHandler.successResponse(res, list, responseMessages.getProductCategorySuccessfully)
-
+      await productCategorySchema.validateAsync(req.body);
     } catch (err) {
-        responseHandler.errorResponse(res, err.message, commonErrorMessage)
+      responseHandler.errorResponse(res, err.message, err.message);
+      return false;
     }
-}
+
+    const resp = await query(getProductCategoryQuery(req.body.searchText));
+    let list = mysqlResponseHandler(resp);
+    responseHandler.successResponse(
+      res,
+      list,
+      responseMessages.getProductCategorySuccessfully
+    );
+  } catch (err) {
+    responseHandler.errorResponse(res, err.message, commonErrorMessage);
+  }
+};
 
 module.exports.updateProductCategory = async (req, res) => {
   try {
@@ -109,6 +114,56 @@ module.exports.deleteProductCategory = async (req, res) => {
     } catch (err) {
       responseHandler.errorResponse(res, err.message, err.message);
     }
+  } catch (err) {
+    responseHandler.errorResponse(res, err.message, commonErrorMessage);
+  }
+};
+
+module.exports.addProduct = async (req, res) => {
+  try {
+    const productSchema = Joi.object({
+      productName: Joi.string().required(),
+      productCode: Joi.string().required(),
+      productCategory: Joi.number().required(),
+      brand: Joi.number().required(),
+      productQty: Joi.number().required(),
+      productCost: Joi.string().required(),
+    });
+    try {
+      await productSchema.validateAsync(req.body);
+      const resp = await addProductSP(req.body);
+      responseHandler.successResponse(
+        res,
+        responseMessages.addProduct
+      );
+    } catch (err) {
+      responseHandler.errorResponse(res, err.message, err.message);
+    }
+  } catch (err) {
+    responseHandler.errorResponse(res, err.message, commonErrorMessage);
+  }
+};
+
+exports.getProduct = async (req, res) => {
+  try {
+    const productSchema = Joi.object({
+      searchText: Joi.string().allow(""),
+    });
+
+    try {
+      await productSchema.validateAsync(req.body);
+    } catch (err) {
+      responseHandler.errorResponse(res, err.message, err.message);
+      return false;
+    }
+
+    const resp = await query(getProductQuery(req.body.searchText));
+    let list = mysqlResponseHandler(resp);
+    responseHandler.successResponse(
+      res,
+      list,
+      responseMessages.getProductCategorySuccessfully
+    );
   } catch (err) {
     responseHandler.errorResponse(res, err.message, commonErrorMessage);
   }
