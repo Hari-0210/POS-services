@@ -1,7 +1,10 @@
 module.exports = {
   addBrandQuery: (brandName) =>
     `Insert into brand (brandName) values ('${brandName}')`,
-  getBrandQuery: `Select * from brand`,
+  getBrandQuery: (searchText) =>
+    `Select * from brand ${
+      searchText ? `where (brandName LIKE '%${searchText}%')` : ""
+    }`,
   updateBrandQuery: (brandName, brandID) =>
     `Update brand set brandName ='${brandName}'where brandID = ${brandID}`,
   deleteBrandQuery: (brandID) => `Delete from brand where brandID = ${brandID}`,

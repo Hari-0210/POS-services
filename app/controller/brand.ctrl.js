@@ -21,9 +21,9 @@ module.exports.addBrand = async (req, res) => {
     try {
       await brandSchema.validateAsync(req.body);
       const resp = await query(addBrandQuery(req.body.brandName));
-      console.log(resp);
+
       const rows = mysqlSingleResponseHandler(resp);
-      console.log(rows);
+
       responseHandler.successResponse(
         res,
         {
@@ -41,10 +41,10 @@ module.exports.addBrand = async (req, res) => {
 
 module.exports.getBrand = async (req, res) => {
   try {
-    const resp = await query(getBrandQuery);
+    const resp = await query(getBrandQuery(req.body.searchText));
 
     let list = mysqlResponseHandler(resp);
-    console.log(resp);
+
     responseHandler.successResponse(
       res,
       list,
@@ -66,7 +66,7 @@ module.exports.updateBrand = async (req, res) => {
       const resp = await query(
         updateBrandQuery(req.body.brandName, req.body.brandID)
       );
-      console.log(resp);
+
       const rows = mysqlSingleResponseHandler(resp);
       responseHandler.successResponse(
         res,
@@ -86,8 +86,8 @@ module.exports.deleteBrand = async (req, res) => {
       brandID: Joi.number().required(),
     });
     try {
-      await productCategorySchema.validateAsync(req.body);
-      const resp = await query(deleteBrandQuery(req.body.brandID));
+      await productCategorySchema.validateAsync(req.params);
+      const resp = await query(deleteBrandQuery(req.params.brandID));
       const rows = mysqlSingleResponseHandler(resp);
       responseHandler.successResponse(
         res,
