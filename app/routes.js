@@ -26,4 +26,12 @@ router.get("/getBrand", getBrand);
 router.put("/updateBrand", updateBrand);
 router.delete("/deleteBrand", deleteBrand);
 
+router.post("/login", login);
+router.post("/addUser", addUser);
+router.get("/getUser", getUser);
+router.post("/addProductCategory", addProductCategory);
+router.post("/getProductCategory", getProductCategory);
+router.put("/updateProductCategory", updateProductCategory);
+router.get("/deleteProductCategory/:productCategoryID", deleteProductCategory);
+
 module.exports = router;
