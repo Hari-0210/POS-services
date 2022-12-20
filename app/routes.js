@@ -8,9 +8,9 @@ router.post('/login', login);
 router.post('/addUser', addUser);
 router.get('/getUser', getUser);
 router.post('/addProductCategory', addProductCategory);
-router.get('/getProductCategory', getProductCategory);
+router.post('/getProductCategory', getProductCategory);
 router.put('/updateProductCategory', updateProductCategory);
-router.delete('/deleteProductCategory', deleteProductCategory);
+router.get('/deleteProductCategory/:productCategoryID', deleteProductCategory);
 
 
 
