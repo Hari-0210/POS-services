@@ -1,0 +1,20 @@
+{
+  message: 'express/index.js:line27 :: Unexpected token s in JSON at position 19',
+  level: 'error',
+  timestamp: '2022-12-20 11:14:50'
+}
+{
+  message: 'express/index.js:line27 :: Unexpected token h in JSON at position 19',
+  level: 'error',
+  timestamp: '2022-12-20 11:16:30'
+}
+{
+  message: 'express/index.js:line27 :: Unexpected string in JSON at position 24',
+  level: 'error',
+  timestamp: '2022-12-20 11:17:16'
+}
+{
+  message: 'express/index.js:line27 :: Unexpected string in JSON at position 24',
+  level: 'error',
+  timestamp: '2022-12-20 11:46:36'
+}
