@@ -11,8 +11,10 @@ module.exports = {
     `Delete from productCategory where productCategoryID = ${productCategoryID}`,
   getProductQuery: (searchText) =>
     `Select product.*,brand.brandName as brandName,productCategory.productCategoryName as productCategoryName from product 
-    Left join brand on brand.brandID = product.brand
+    left join brand on brand.brandID = product.brand
     Left join productCategory on productCategory.productCategoryID = product.productCategory ${
       searchText ? `where (product.productName LIKE '%${searchText}%')` : ""
     } ORDER BY createdDate DESC`,
+    deleteProductQuery: (productID) =>
+    `Delete from product where productID = ${productID}`
 };

@@ -7,5 +7,5 @@ module.exports = {
     }`,
   updateBrandQuery: (brandName, brandID) =>
     `Update brand set brandName ='${brandName}'where brandID = ${brandID}`,
-  deleteBrandQuery: (brandID) => `Delete from brand where brandID = ${brandID}`,
+  
 };

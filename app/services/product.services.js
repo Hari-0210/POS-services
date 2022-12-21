@@ -25,3 +25,53 @@ module.exports.addProductSP = async (values) => {
     );
   });
 };
+
+module.exports.updateProductSP = async (values) => {
+  return new Promise((res, rej) => {
+    let sql = `CALL update_product(?,?,?,?,?,?,?)`;
+    con.query(
+      sql,
+      [
+        values.productID,
+        values.productName,
+        values.productCode,
+        values.productCategory,
+        values.brand,
+        values.productQty,
+        values.productCost,
+      ],
+      function (err, result) {
+        if (err) {
+          console.error(err);
+          rej(err);
+        } else {
+          console.error(result);
+          res(result);
+        }
+      }
+    );
+  });
+};
+
+module.exports.deleteProductCategorySP = async (values) => {
+  console.log(values);
+  return new Promise((res, rej) => {
+    let sql = `CALL delete_productCategory(?)`;
+    con.query(
+      sql,
+      [
+        values
+      ],
+      function (err, result) {
+        if (err) {
+          console.error(err);
+          rej(err);
+        } else {
+          console.error(result);
+          res(result);
+        }
+      }
+    );
+  });
+};
+

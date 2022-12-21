@@ -8206,3 +8206,2509 @@
   ],
   timestamp: '2022-12-20 22:25:06'
 }
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE count_product INT;
+    SELECT 
+      COUNT(productName)
+  INTO count_product F' at line 1
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.deleteBrand (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js:89:26) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE count_product INT;\n" +
+      '  SELECT \n' +
+      '    COUNT(productName)\n' +
+      "INTO count_product F' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: '\n' +
+      '  DECLARE count_product INT;\n' +
+      '  SELECT \n' +
+      '    COUNT(productName)\n' +
+      'INTO count_product FROM\n' +
+      '    product\n' +
+      'WHERE\n' +
+      '    product.brandID = 7;\n' +
+      '    IF count_product > 0 THEN\n' +
+      "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First Delete Products under this brand and try';\n" +
+      '    ELSE\n' +
+      '    Delete from brand where brandID = 7\n' +
+      '    END IF;'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE count_product INT;\n" +
+    '  SELECT \n' +
+    '    COUNT(productName)\n' +
+    "INTO count_product F' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE count_product INT;\n" +
+    '  SELECT \n' +
+    '    COUNT(productName)\n' +
+    "INTO count_product F' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE count_product INT;\n" +
+    '  SELECT \n' +
+    '    COUNT(productName)\n' +
+    "INTO count_product F' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  exception: true,
+  date: 'Wed Dec 21 2022 10:16:17 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 13924,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 43446272,
+      heapTotal: 16838656,
+      heapUsed: 14992352,
+      external: 1076822,
+      arrayBuffers: 52347
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 262332 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      function: 'module.exports.deleteBrand',
+      line: 89,
+      method: 'deleteBrand',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-21 10:16:17'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;
+    SELECT 
+      COUNT(productName)
+  INTO @count_product' at line 1
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.deleteBrand (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js:89:26) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;\n" +
+      '  SELECT \n' +
+      '    COUNT(productName)\n' +
+      "INTO @count_product' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: '\n' +
+      '  DECLARE @count_product INT;\n' +
+      '  SELECT \n' +
+      '    COUNT(productName)\n' +
+      'INTO @count_product FROM\n' +
+      '    product\n' +
+      'WHERE\n' +
+      '    product.brandID = 7;\n' +
+      '    IF @count_product > 0 THEN\n' +
+      "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First Delete Products under this brand and try';\n" +
+      '    ELSE\n' +
+      '    Delete from brand where brandID = 7\n' +
+      '    END IF;'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;\n" +
+    '  SELECT \n' +
+    '    COUNT(productName)\n' +
+    "INTO @count_product' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;\n" +
+    '  SELECT \n' +
+    '    COUNT(productName)\n' +
+    "INTO @count_product' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;\n" +
+    '  SELECT \n' +
+    '    COUNT(productName)\n' +
+    "INTO @count_product' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  exception: true,
+  date: 'Wed Dec 21 2022 10:18:39 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 8640,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 53800960,
+      heapTotal: 32305152,
+      heapUsed: 20003160,
+      external: 3761717,
+      arrayBuffers: 497050
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 262473 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      function: 'module.exports.deleteBrand',
+      line: 89,
+      method: 'deleteBrand',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-21 10:18:39'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;
+    SET @countYear = SELECT COUNT(productName) FROM pr' at line 1
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.deleteBrand (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js:89:26) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;\n" +
+      "  SET @countYear = SELECT COUNT(productName) FROM pr' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: '\n' +
+      '  DECLARE @count_product INT;\n' +
+      '  SET @countYear = SELECT COUNT(productName) FROM product\n' +
+      '  WHERE product.brandID = 7;\n' +
+      '  \n' +
+      '    IF @count_product > 0 THEN\n' +
+      "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First Delete Products under this brand and try';\n" +
+      '    ELSE\n' +
+      '    Delete from brand where brandID = 7\n' +
+      '    END IF;'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;\n" +
+    "  SET @countYear = SELECT COUNT(productName) FROM pr' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;\n" +
+    "  SET @countYear = SELECT COUNT(productName) FROM pr' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;\n" +
+    "  SET @countYear = SELECT COUNT(productName) FROM pr' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  exception: true,
+  date: 'Wed Dec 21 2022 10:22:31 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 23160,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 52989952,
+      heapTotal: 32043008,
+      heapUsed: 20383224,
+      external: 3761706,
+      arrayBuffers: 503774
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 262705 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      function: 'module.exports.deleteBrand',
+      line: 89,
+      method: 'deleteBrand',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-21 10:22:31'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;
+    SET @count_product = SELECT COUNT(productName) FRO' at line 1
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.deleteBrand (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js:89:26) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;\n" +
+      "  SET @count_product = SELECT COUNT(productName) FRO' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: '\n' +
+      '  DECLARE @count_product INT;\n' +
+      '  SET @count_product = SELECT COUNT(productName) FROM product\n' +
+      '  WHERE product.brandID = 7;\n' +
+      '  \n' +
+      '    IF @count_product > 0 THEN\n' +
+      "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First Delete Products under this brand and try';\n" +
+      '    ELSE\n' +
+      '    Delete from brand where brandID = 7\n' +
+      '    END IF;'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;\n" +
+    "  SET @count_product = SELECT COUNT(productName) FRO' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;\n" +
+    "  SET @count_product = SELECT COUNT(productName) FRO' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DECLARE @count_product INT;\n" +
+    "  SET @count_product = SELECT COUNT(productName) FRO' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  exception: true,
+  date: 'Wed Dec 21 2022 10:24:33 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 4904,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 53772288,
+      heapTotal: 32305152,
+      heapUsed: 20218992,
+      external: 3761710,
+      arrayBuffers: 503778
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 262828 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      function: 'module.exports.deleteBrand',
+      line: 89,
+      method: 'deleteBrand',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-21 10:24:33'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT COUNT(productName) FROM product
+    WHERE product.brandID = 7;
+    
+      IF @c' at line 1
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.deleteBrand (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js:89:26) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT COUNT(productName) FROM product\n" +
+      '  WHERE product.brandID = 7;\n' +
+      '  \n' +
+      "    IF @c' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: '\n' +
+      '  SET @count_product = SELECT COUNT(productName) FROM product\n' +
+      '  WHERE product.brandID = 7;\n' +
+      '  \n' +
+      '    IF @count_product > 0 THEN\n' +
+      "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First Delete Products under this brand and try';\n" +
+      '    ELSE\n' +
+      '    Delete from brand where brandID = 7\n' +
+      '    END IF;'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT COUNT(productName) FROM product\n" +
+    '  WHERE product.brandID = 7;\n' +
+    '  \n' +
+    "    IF @c' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT COUNT(productName) FROM product\n" +
+    '  WHERE product.brandID = 7;\n' +
+    '  \n' +
+    "    IF @c' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT COUNT(productName) FROM product\n" +
+    '  WHERE product.brandID = 7;\n' +
+    '  \n' +
+    "    IF @c' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  exception: true,
+  date: 'Wed Dec 21 2022 10:24:42 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 21224,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 53669888,
+      heapTotal: 32305152,
+      heapUsed: 20296128,
+      external: 3761680,
+      arrayBuffers: 503748
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 262836 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      function: 'module.exports.deleteBrand',
+      line: 89,
+      method: 'deleteBrand',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-21 10:24:42'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT COUNT(productName) FROM product
+    WHERE product.brandID = 7;
+    
+      IF @c' at line 1
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.deleteBrand (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js:89:26) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT COUNT(productName) FROM product\n" +
+      '  WHERE product.brandID = 7;\n' +
+      '  \n' +
+      "    IF @c' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: '\n' +
+      '  SET @count_product := SELECT COUNT(productName) FROM product\n' +
+      '  WHERE product.brandID = 7;\n' +
+      '  \n' +
+      '    IF @count_product > 0 THEN\n' +
+      "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First Delete Products under this brand and try';\n" +
+      '    ELSE\n' +
+      '    Delete from brand where brandID = 7\n' +
+      '    END IF;'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT COUNT(productName) FROM product\n" +
+    '  WHERE product.brandID = 7;\n' +
+    '  \n' +
+    "    IF @c' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT COUNT(productName) FROM product\n" +
+    '  WHERE product.brandID = 7;\n' +
+    '  \n' +
+    "    IF @c' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT COUNT(productName) FROM product\n" +
+    '  WHERE product.brandID = 7;\n' +
+    '  \n' +
+    "    IF @c' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  exception: true,
+  date: 'Wed Dec 21 2022 10:25:10 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 3340,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 53653504,
+      heapTotal: 32305152,
+      heapUsed: 20307928,
+      external: 3761681,
+      arrayBuffers: 503749
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 262864 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      function: 'module.exports.deleteBrand',
+      line: 89,
+      method: 'deleteBrand',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-21 10:25:10'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF @count_product > 0 THEN
+      SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First' at line 3
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.deleteBrand (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js:89:26) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF @count_product > 0 THEN\n" +
+      "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First' at line 3",
+    sqlState: '42000',
+    index: 0,
+    sql: '\n' +
+      '  SELECT COUNT(productName) INTO @count_product FROM product\n' +
+      '  WHERE product.brandID = 7;\n' +
+      '  \n' +
+      '    IF @count_product > 0 THEN\n' +
+      "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First Delete Products under this brand and try';\n" +
+      '    ELSE\n' +
+      '    Delete from brand where brandID = 7\n' +
+      '    END IF;'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF @count_product > 0 THEN\n" +
+    "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First' at line 3\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF @count_product > 0 THEN\n" +
+    "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First' at line 3\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF @count_product > 0 THEN\n" +
+    "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First' at line 3\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  exception: true,
+  date: 'Wed Dec 21 2022 10:27:26 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 24524,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 53383168,
+      heapTotal: 32043008,
+      heapUsed: 20182144,
+      external: 3761679,
+      arrayBuffers: 503747
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 263001 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      function: 'module.exports.deleteBrand',
+      line: 89,
+      method: 'deleteBrand',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-21 10:27:26'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF @count_product > 0 THEN
+      SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First' at line 3
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.deleteBrand (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js:89:26) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF @count_product > 0 THEN\n" +
+      "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First' at line 3",
+    sqlState: '42000',
+    index: 0,
+    sql: '\n' +
+      '  SELECT COUNT(productName) INTO @count_product FROM product\n' +
+      '  WHERE product.brand = 7;\n' +
+      '  \n' +
+      '    IF @count_product > 0 THEN\n' +
+      "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First Delete Products under this brand and try';\n" +
+      '    ELSE\n' +
+      '    Delete from brand where brandID = 7\n' +
+      '    END IF;'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF @count_product > 0 THEN\n" +
+    "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First' at line 3\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF @count_product > 0 THEN\n" +
+    "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First' at line 3\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IF @count_product > 0 THEN\n" +
+    "    SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'First' at line 3\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:89:26)',
+  exception: true,
+  date: 'Wed Dec 21 2022 10:33:06 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 18840,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 53334016,
+      heapTotal: 32305152,
+      heapUsed: 19466352,
+      external: 3761677,
+      arrayBuffers: 410879
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 263340 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      function: 'module.exports.deleteBrand',
+      line: 89,
+      method: 'deleteBrand',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-21 10:33:06'
+}
+{
+  error: Error: Route.get() requires a callback function but got a [object Undefined]
+      at Route.<computed> [as get] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:211:15)
+      at Function.proto.<computed> [as get] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\index.js:521:19)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:35:8)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16),
+  level: 'error',
+  message: 'uncaughtException: Route.get() requires a callback function but got a [object Undefined]\n' +
+    'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+    '    at Route.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:211:15)\n' +
+    '    at Function.proto.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:35:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)',
+  stack: 'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+    '    at Route.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:211:15)\n' +
+    '    at Function.proto.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:35:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)',
+  exception: true,
+  date: 'Wed Dec 21 2022 10:44:50 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 18604,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 50225152,
+      heapTotal: 31780864,
+      heapUsed: 18367120,
+      external: 3634999,
+      arrayBuffers: 411949
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 264044 },
+  trace: [
+    {
+      column: 15,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.<computed> [as get]',
+      line: 211,
+      method: '<computed> [as get]',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js',
+      function: 'Function.proto.<computed> [as get]',
+      line: 521,
+      method: '<computed> [as get]',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 35,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-21 10:44:50'
+}
+{
+  error: Error: Route.get() requires a callback function but got a [object Undefined]
+      at Route.<computed> [as get] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:211:15)
+      at Function.proto.<computed> [as get] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\index.js:521:19)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:35:8)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16),
+  level: 'error',
+  message: 'uncaughtException: Route.get() requires a callback function but got a [object Undefined]\n' +
+    'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+    '    at Route.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:211:15)\n' +
+    '    at Function.proto.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:35:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)',
+  stack: 'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+    '    at Route.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:211:15)\n' +
+    '    at Function.proto.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:35:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)',
+  exception: true,
+  date: 'Wed Dec 21 2022 10:45:11 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 7164,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 50315264,
+      heapTotal: 31780864,
+      heapUsed: 18369400,
+      external: 3634999,
+      arrayBuffers: 411949
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 264065 },
+  trace: [
+    {
+      column: 15,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.<computed> [as get]',
+      line: 211,
+      method: '<computed> [as get]',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js',
+      function: 'Function.proto.<computed> [as get]',
+      line: 521,
+      method: '<computed> [as get]',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 35,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-21 10:45:11'
+}
+{
+  error: Error: Route.get() requires a callback function but got a [object Undefined]
+      at Route.<computed> [as get] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:211:15)
+      at Function.proto.<computed> [as get] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\index.js:521:19)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:35:8)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16),
+  level: 'error',
+  message: 'uncaughtException: Route.get() requires a callback function but got a [object Undefined]\n' +
+    'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+    '    at Route.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:211:15)\n' +
+    '    at Function.proto.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:35:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)',
+  stack: 'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+    '    at Route.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:211:15)\n' +
+    '    at Function.proto.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:35:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)',
+  exception: true,
+  date: 'Wed Dec 21 2022 10:45:20 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 22048,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 49491968,
+      heapTotal: 31518720,
+      heapUsed: 18244672,
+      external: 3634999,
+      arrayBuffers: 397756
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 264074 },
+  trace: [
+    {
+      column: 15,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.<computed> [as get]',
+      line: 211,
+      method: '<computed> [as get]',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js',
+      function: 'Function.proto.<computed> [as get]',
+      line: 521,
+      method: '<computed> [as get]',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 35,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-21 10:45:20'
+}
+{
+  error: Error: Route.get() requires a callback function but got a [object Undefined]
+      at Route.<computed> [as get] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:211:15)
+      at Function.proto.<computed> [as get] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\index.js:521:19)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:35:8)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16),
+  level: 'error',
+  message: 'uncaughtException: Route.get() requires a callback function but got a [object Undefined]\n' +
+    'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+    '    at Route.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:211:15)\n' +
+    '    at Function.proto.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:35:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)',
+  stack: 'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+    '    at Route.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:211:15)\n' +
+    '    at Function.proto.<computed> [as get] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:35:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)',
+  exception: true,
+  date: 'Wed Dec 21 2022 10:46:00 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 14988,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 50302976,
+      heapTotal: 31780864,
+      heapUsed: 17910000,
+      external: 3634999,
+      arrayBuffers: 377016
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 264115 },
+  trace: [
+    {
+      column: 15,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.<computed> [as get]',
+      line: 211,
+      method: '<computed> [as get]',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js',
+      function: 'Function.proto.<computed> [as get]',
+      line: 521,
+      method: '<computed> [as get]',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 35,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-21 10:46:00'
+}

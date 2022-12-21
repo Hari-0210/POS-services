@@ -63,7 +63,6 @@ module.exports.addUser = async (req, res) => {
       req.body.password = await passwordHash(req.body.password);
       req.body.roleID = 2;
       const resp = await addUserSP(req.body);
-      console.log(resp);
       const user = await query(
         `select * from userDetails where userName = '${req.body.userName}'`
       );

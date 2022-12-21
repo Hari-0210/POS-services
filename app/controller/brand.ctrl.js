@@ -2,7 +2,6 @@ const {
   addBrandQuery,
   getBrandQuery,
   updateBrandQuery,
-  deleteBrandQuery,
 } = require("../query/brand.query");
 const Joi = require("joi");
 const { query } = require("../../helper/executequery");
@@ -12,6 +11,7 @@ const {
   mysqlSingleResponseHandler,
   mysqlResponseHandler,
 } = require("../../utilities/utility");
+const { deleteBrandSP } = require("../services/brand.services");
 
 module.exports.addBrand = async (req, res) => {
   try {
@@ -66,10 +66,9 @@ module.exports.updateBrand = async (req, res) => {
       const resp = await query(
         updateBrandQuery(req.body.brandName, req.body.brandID)
       );
-
       const rows = mysqlSingleResponseHandler(resp);
       responseHandler.successResponse(
-        res,
+        res,{...rows},
         responseMessages.updateBrandSuccessfully
       );
     } catch (err) {
@@ -82,12 +81,12 @@ module.exports.updateBrand = async (req, res) => {
 
 module.exports.deleteBrand = async (req, res) => {
   try {
-    const productCategorySchema = Joi.object({
+    const brandSchema = Joi.object({
       brandID: Joi.number().required(),
     });
     try {
-      await productCategorySchema.validateAsync(req.params);
-      const resp = await query(deleteBrandQuery(req.params.brandID));
+      await brandSchema.validateAsync(req.params);
+      const resp = await deleteBrandSP(req.params.brandID);
       const rows = mysqlSingleResponseHandler(resp);
       responseHandler.successResponse(
         res,
@@ -103,3 +102,5 @@ module.exports.deleteBrand = async (req, res) => {
     responseHandler.errorResponse(res, err.message, commonErrorMessage);
   }
 };
+
+
