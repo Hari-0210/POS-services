@@ -10,7 +10,7 @@ module.exports = {
   deleteProductCategoryQuery: (productCategoryID) =>
     `Delete from productCategory where productCategoryID = ${productCategoryID}`,
   getProductQuery: (searchText) =>
-    `Select product.*,brand.brandName as brandName,productCategory.productCategoryName as productCategoryName from product 
+    `Select product.*,CONVERT_TZ(product.createdDate,'+00:00','+12:30') createdDate,brand.brandName as brandName,productCategory.productCategoryName as productCategoryName from product 
     left join brand on brand.brandID = product.brand
     Left join productCategory on productCategory.productCategoryID = product.productCategory ${
       searchText ? `where (product.productName LIKE '%${searchText}%')` : ""
