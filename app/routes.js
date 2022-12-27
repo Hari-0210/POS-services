@@ -16,6 +16,7 @@ const {
   updateProduct,
   deleteProduct,
 } = require("./controller/product.ctrl");
+const { addSales } = require("./controller/sales.ctrl");
 const { login, addUser, getUser } = require("./controller/user.ctrl");
 
 // CRUD User
@@ -41,11 +42,9 @@ router.post("/getBrand", getBrand);
 router.put("/updateBrand", updateBrand);
 router.get("/deleteBrand/:brandID", deleteBrand);
 
-
 router.get("/getCustomer", getCustomer);
 router.post("/addCustomer", addCustomer);
 
-
-
+router.post("/addSales", addSales);
 
 module.exports = router;
