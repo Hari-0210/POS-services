@@ -5,6 +5,7 @@ const {
   updateBrand,
   deleteBrand,
 } = require("./controller/brand.ctrl");
+const { getCustomer, addCustomer } = require("./controller/cust.ctrl");
 const {
   addProductCategory,
   getProductCategory,
@@ -39,6 +40,12 @@ router.post("/addBrand", addBrand);
 router.post("/getBrand", getBrand);
 router.put("/updateBrand", updateBrand);
 router.get("/deleteBrand/:brandID", deleteBrand);
+
+
+router.get("/getCustomer", getCustomer);
+router.post("/addCustomer", addCustomer);
+
+
 
 
 module.exports = router;

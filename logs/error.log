@@ -11161,3 +11161,1905 @@
   ],
   timestamp: '2022-12-21 16:57:18'
 }
+{
+  error: Error: Handshake inactivity timeout
+      at Handshake.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+      at Handshake.emit (node:events:527:28)
+      at Handshake._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+      at Timer._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Timer.js:32:23)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:202:8)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.login (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\user.ctrl.js:25:26)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'PROTOCOL_SEQUENCE_TIMEOUT',
+    fatal: true,
+    timeout: 10000
+  },
+  level: 'error',
+  message: 'uncaughtException: Handshake inactivity timeout\n' +
+    'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:202:8)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.login (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:25:26)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: 'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:202:8)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.login (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:25:26)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Sat Dec 24 2022 12:41:00 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 5276,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 42549248,
+      heapTotal: 16314368,
+      heapUsed: 14608000,
+      external: 1064208,
+      arrayBuffers: 130741
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 103948 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Handshake.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Handshake._onTimeout',
+      line: 124,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js',
+      function: 'Timer._onTimeout',
+      line: 32,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/timers',
+      function: 'listOnTimeout',
+      line: 559,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/timers',
+      function: 'processTimers',
+      line: 502,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 202,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js',
+      function: 'module.exports.login',
+      line: 25,
+      method: 'login',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-24 12:41:00'
+}
+{
+  error: Error: Handshake inactivity timeout
+      at Handshake.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+      at Handshake.emit (node:events:527:28)
+      at Handshake._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+      at Timer._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Timer.js:32:23)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at module.exports.db (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\config\mysqldb.js:5:7)
+      at Server.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js:18:9)
+      at Object.onceWrapper (node:events:641:28)
+      at Server.emit (node:events:527:28)
+      at emitListeningNT (node:net:1406:10)
+      at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    code: 'PROTOCOL_SEQUENCE_TIMEOUT',
+    fatal: true,
+    timeout: 10000
+  },
+  level: 'error',
+  message: 'uncaughtException: Handshake inactivity timeout\n' +
+    'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  stack: 'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  exception: true,
+  date: 'Sat Dec 24 2022 12:41:18 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 5260,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 46268416,
+      heapTotal: 17100800,
+      heapUsed: 14553728,
+      external: 974609,
+      arrayBuffers: 41142
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 103966 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Handshake.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Handshake._onTimeout',
+      line: 124,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js',
+      function: 'Timer._onTimeout',
+      line: 32,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/timers',
+      function: 'listOnTimeout',
+      line: 559,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/timers',
+      function: 'processTimers',
+      line: 502,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js',
+      function: 'module.exports.db',
+      line: 5,
+      method: 'db',
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Object.onceWrapper',
+      line: 641,
+      method: 'onceWrapper',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Server.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:net',
+      function: 'emitListeningNT',
+      line: 1406,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 82,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-24 12:41:18'
+}
+{
+  error: Error: Handshake inactivity timeout
+      at Handshake.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+      at Handshake.emit (node:events:527:28)
+      at Handshake._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+      at Timer._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Timer.js:32:23)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at module.exports.db (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\config\mysqldb.js:5:7)
+      at Server.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js:18:9)
+      at Object.onceWrapper (node:events:641:28)
+      at Server.emit (node:events:527:28)
+      at emitListeningNT (node:net:1406:10)
+      at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    code: 'PROTOCOL_SEQUENCE_TIMEOUT',
+    fatal: true,
+    timeout: 10000
+  },
+  level: 'error',
+  message: 'uncaughtException: Handshake inactivity timeout\n' +
+    'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  stack: 'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  exception: true,
+  date: 'Sat Dec 24 2022 12:42:03 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 21404,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 45920256,
+      heapTotal: 16576512,
+      heapUsed: 13969040,
+      external: 974609,
+      arrayBuffers: 41142
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 104012 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Handshake.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Handshake._onTimeout',
+      line: 124,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js',
+      function: 'Timer._onTimeout',
+      line: 32,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/timers',
+      function: 'listOnTimeout',
+      line: 559,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/timers',
+      function: 'processTimers',
+      line: 502,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js',
+      function: 'module.exports.db',
+      line: 5,
+      method: 'db',
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Object.onceWrapper',
+      line: 641,
+      method: 'onceWrapper',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Server.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:net',
+      function: 'emitListeningNT',
+      line: 1406,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 82,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-24 12:42:03'
+}
+{
+  error: Error: Handshake inactivity timeout
+      at Handshake.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+      at Handshake.emit (node:events:527:28)
+      at Handshake._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+      at Timer._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Timer.js:32:23)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at module.exports.db (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\config\mysqldb.js:5:7)
+      at Server.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js:18:9)
+      at Object.onceWrapper (node:events:641:28)
+      at Server.emit (node:events:527:28)
+      at emitListeningNT (node:net:1406:10)
+      at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    code: 'PROTOCOL_SEQUENCE_TIMEOUT',
+    fatal: true,
+    timeout: 10000
+  },
+  level: 'error',
+  message: 'uncaughtException: Handshake inactivity timeout\n' +
+    'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  stack: 'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  exception: true,
+  date: 'Sat Dec 24 2022 12:43:38 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 20416,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 45793280,
+      heapTotal: 16576512,
+      heapUsed: 13857240,
+      external: 974609,
+      arrayBuffers: 41142
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 104106 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Handshake.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Handshake._onTimeout',
+      line: 124,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js',
+      function: 'Timer._onTimeout',
+      line: 32,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/timers',
+      function: 'listOnTimeout',
+      line: 559,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/timers',
+      function: 'processTimers',
+      line: 502,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js',
+      function: 'module.exports.db',
+      line: 5,
+      method: 'db',
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Object.onceWrapper',
+      line: 641,
+      method: 'onceWrapper',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Server.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:net',
+      function: 'emitListeningNT',
+      line: 1406,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 82,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-24 12:43:38'
+}
+{
+  error: Error: Handshake inactivity timeout
+      at Handshake.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+      at Handshake.emit (node:events:527:28)
+      at Handshake._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+      at Timer._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Timer.js:32:23)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:202:8)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.getBrand (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js:44:24)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5) {
+    code: 'PROTOCOL_SEQUENCE_TIMEOUT',
+    fatal: true,
+    timeout: 10000
+  },
+  level: 'error',
+  message: 'uncaughtException: Handshake inactivity timeout\n' +
+    'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:202:8)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.getBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:44:24)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)',
+  stack: 'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:202:8)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.getBrand (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:44:24)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)',
+  exception: true,
+  date: 'Sat Dec 24 2022 14:34:33 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 2076,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 35692544,
+      heapTotal: 18935808,
+      heapUsed: 16999848,
+      external: 1282865,
+      arrayBuffers: 77670
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 110761 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Handshake.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Handshake._onTimeout',
+      line: 124,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js',
+      function: 'Timer._onTimeout',
+      line: 32,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/timers',
+      function: 'listOnTimeout',
+      line: 559,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/timers',
+      function: 'processTimers',
+      line: 502,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 202,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      function: 'module.exports.getBrand',
+      line: 44,
+      method: 'getBrand',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-24 14:34:33'
+}
+{
+  error: Error: Handshake inactivity timeout
+      at Handshake.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+      at Handshake.emit (node:events:527:28)
+      at Handshake._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+      at Timer._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Timer.js:32:23)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at module.exports.db (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\config\mysqldb.js:5:7)
+      at Server.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js:18:9)
+      at Object.onceWrapper (node:events:641:28)
+      at Server.emit (node:events:527:28)
+      at emitListeningNT (node:net:1406:10)
+      at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    code: 'PROTOCOL_SEQUENCE_TIMEOUT',
+    fatal: true,
+    timeout: 10000
+  },
+  level: 'error',
+  message: 'uncaughtException: Handshake inactivity timeout\n' +
+    'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  stack: 'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  exception: true,
+  date: 'Sat Dec 24 2022 14:49:37 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 2256,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41914368,
+      heapTotal: 16052224,
+      heapUsed: 13320032,
+      external: 974609,
+      arrayBuffers: 41142
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 111665 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Handshake.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Handshake._onTimeout',
+      line: 124,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js',
+      function: 'Timer._onTimeout',
+      line: 32,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/timers',
+      function: 'listOnTimeout',
+      line: 559,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/timers',
+      function: 'processTimers',
+      line: 502,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js',
+      function: 'module.exports.db',
+      line: 5,
+      method: 'db',
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Object.onceWrapper',
+      line: 641,
+      method: 'onceWrapper',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Server.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:net',
+      function: 'emitListeningNT',
+      line: 1406,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 82,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-24 14:49:37'
+}
+{
+  error: Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:202:8)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at exports.getProduct (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\product.ctrl.js:159:24)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'bom1plzcpnl493931.prod.bom1.secureserver.net',
+    fatal: true
+  },
+  level: 'error',
+  message: 'uncaughtException: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    'Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    '    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:202:8)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProduct (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\product.ctrl.js:159:24)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: 'Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    '    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:202:8)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProduct (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\product.ctrl.js:159:24)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Sun Dec 25 2022 12:56:05 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 21288,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 25268224,
+      heapTotal: 19722240,
+      heapUsed: 18435240,
+      external: 2557673,
+      arrayBuffers: 96082
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 191251 },
+  trace: [
+    {
+      column: 26,
+      file: 'node:dns',
+      function: 'GetAddrInfoReqWrap.onlookup [as oncomplete]',
+      line: 71,
+      method: 'onlookup [as oncomplete]',
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 202,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\product.ctrl.js',
+      function: 'exports.getProduct',
+      line: 159,
+      method: 'getProduct',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-25 12:56:05'
+}
+{
+  error: Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at module.exports.db (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\config\mysqldb.js:5:7)
+      at Server.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js:18:9)
+      at Object.onceWrapper (node:events:641:28)
+      at Server.emit (node:events:527:28)
+      at emitListeningNT (node:net:1406:10)
+      at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'bom1plzcpnl493931.prod.bom1.secureserver.net',
+    fatal: true
+  },
+  level: 'error',
+  message: 'uncaughtException: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    'Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    '    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  stack: 'Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    '    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  exception: true,
+  date: 'Sun Dec 25 2022 12:56:30 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 11708,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 51843072,
+      heapTotal: 31780864,
+      heapUsed: 19004128,
+      external: 3670611,
+      arrayBuffers: 412679
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 191276 },
+  trace: [
+    {
+      column: 26,
+      file: 'node:dns',
+      function: 'GetAddrInfoReqWrap.onlookup [as oncomplete]',
+      line: 71,
+      method: 'onlookup [as oncomplete]',
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js',
+      function: 'module.exports.db',
+      line: 5,
+      method: 'db',
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Object.onceWrapper',
+      line: 641,
+      method: 'onceWrapper',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Server.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:net',
+      function: 'emitListeningNT',
+      line: 1406,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 82,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-25 12:56:30'
+}
+{
+  error: Error: connect ETIMEDOUT
+      at PoolConnection.Connection._handleConnectTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:409:13)
+      at Object.onceWrapper (node:events:641:28)
+      at Socket.emit (node:events:527:28)
+      at Socket._onTimeout (node:net:516:8)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at module.exports.db (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\config\mysqldb.js:5:7)
+      at Server.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js:18:9)
+      at Object.onceWrapper (node:events:641:28)
+      at Server.emit (node:events:527:28)
+      at emitListeningNT (node:net:1406:10)
+      at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    errorno: 'ETIMEDOUT',
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    fatal: true
+  },
+  level: 'error',
+  message: 'uncaughtException: connect ETIMEDOUT\n' +
+    'Error: connect ETIMEDOUT\n' +
+    '    at PoolConnection.Connection._handleConnectTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:409:13)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at Socket._onTimeout (node:net:516:8)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  stack: 'Error: connect ETIMEDOUT\n' +
+    '    at PoolConnection.Connection._handleConnectTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:409:13)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at Socket._onTimeout (node:net:516:8)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  exception: true,
+  date: 'Sun Dec 25 2022 12:56:57 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 13900,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41975808,
+      heapTotal: 16576512,
+      heapUsed: 13906760,
+      external: 974609,
+      arrayBuffers: 41142
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 191303 },
+  trace: [
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.Connection._handleConnectTimeout',
+      line: 409,
+      method: '_handleConnectTimeout',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Object.onceWrapper',
+      line: 641,
+      method: 'onceWrapper',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'node:net',
+      function: 'Socket._onTimeout',
+      line: 516,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/timers',
+      function: 'listOnTimeout',
+      line: 559,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/timers',
+      function: 'processTimers',
+      line: 502,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js',
+      function: 'module.exports.db',
+      line: 5,
+      method: 'db',
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Object.onceWrapper',
+      line: 641,
+      method: 'onceWrapper',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Server.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:net',
+      function: 'emitListeningNT',
+      line: 1406,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 82,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2022-12-25 12:56:57'
+}
