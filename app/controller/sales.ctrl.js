@@ -6,7 +6,11 @@ const {
   mysqlSingleResponseHandler,
   mysqlResponseHandler,
 } = require("../../utilities/utility");
-const { addSalesQuery } = require("../query/sales.query");
+const {
+  addSalesQuery,
+  getSalesQuery,
+  deleteSalesQuery,
+} = require("../query/sales.query");
 const { addSalesSP } = require("../services/sales.services");
 
 module.exports.addSales = async (req, res) => {
@@ -37,6 +41,41 @@ module.exports.addSales = async (req, res) => {
           ...rows,
         },
         "Successfully  Sales Added  "
+      );
+    } catch (err) {
+      responseHandler.errorResponse(res, err.message, err.message);
+    }
+  } catch (err) {
+    responseHandler.errorResponse(res, err.message, commonErrorMessage);
+  }
+};
+module.exports.getSales = async (req, res) => {
+  try {
+    const resp = await query(getSalesQuery);
+
+    let list = mysqlResponseHandler(resp);
+
+    responseHandler.successResponse(res, list, responseMessages.getSales);
+  } catch (err) {
+    responseHandler.errorResponse(res, err.message, commonErrorMessage);
+  }
+};
+
+module.exports.deleteSales = async (req, res) => {
+  try {
+    const SalesSchema = Joi.object({
+      salesMasterID: Joi.number().required(),
+    });
+    try {
+      await SalesSchema.validateAsync(req.params);
+      const resp = await query(deleteSalesQuery(req.params.salesMasterID));
+      const rows = mysqlSingleResponseHandler(resp);
+      responseHandler.successResponse(
+        res,
+        {
+          ...rows,
+        },
+        "Successfully Deleted  SalesProduct"
       );
     } catch (err) {
       responseHandler.errorResponse(res, err.message, err.message);

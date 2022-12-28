@@ -2059,3 +2059,1860 @@
   ],
   timestamp: '2022-12-28 01:08:08'
 }
+{
+  error: C:\Users\harih\OneDrive\Documents\Pos_Services\app\query\sales.query.js:20
+  
+  
+  
+  SyntaxError: Unexpected end of input
+      at Object.compileFunction (node:vm:360:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+      at Module._compile (node:internal/modules/cjs/loader:1083:27)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\sales.ctrl.js:9:27)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14),
+  level: 'error',
+  message: 'uncaughtException: Unexpected end of input\n' +
+    'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\query\\sales.query.js:20\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    'SyntaxError: Unexpected end of input\n' +
+    '    at Object.compileFunction (node:vm:360:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1048:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1083:27)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:9:27)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)',
+  stack: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\query\\sales.query.js:20\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    'SyntaxError: Unexpected end of input\n' +
+    '    at Object.compileFunction (node:vm:360:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1048:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1083:27)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:9:27)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)',
+  exception: true,
+  date: 'Wed Dec 28 2022 22:24:03 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 5356,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 58302464,
+      heapTotal: 31612928,
+      heapUsed: 19783728,
+      external: 1275355,
+      arrayBuffers: 529089
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 79103 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 360,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1048,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1083,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-28 22:24:03'
+}
+{
+  error: C:\Users\harih\OneDrive\Documents\Pos_Services\app\query\sales.query.js:19
+    getSalesQuery:  =>
+                    ^^
+  
+  SyntaxError: Unexpected token '=>'
+      at Object.compileFunction (node:vm:360:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+      at Module._compile (node:internal/modules/cjs/loader:1083:27)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\sales.ctrl.js:9:42)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '=>'\n" +
+    'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\query\\sales.query.js:19\n' +
+    '  getSalesQuery:  =>\n' +
+    '                  ^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '=>'\n" +
+    '    at Object.compileFunction (node:vm:360:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1048:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1083:27)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:9:42)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)',
+  stack: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\query\\sales.query.js:19\n' +
+    '  getSalesQuery:  =>\n' +
+    '                  ^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '=>'\n" +
+    '    at Object.compileFunction (node:vm:360:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1048:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1083:27)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:9:42)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)',
+  exception: true,
+  date: 'Wed Dec 28 2022 22:25:05 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 2184,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 58515456,
+      heapTotal: 31875072,
+      heapUsed: 19916648,
+      external: 1275355,
+      arrayBuffers: 529089
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 79165 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 360,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1048,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1083,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 42,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-28 22:25:05'
+}
+{
+  error: C:\Users\harih\OneDrive\Documents\Pos_Services\app\query\sales.query.js:19
+    getSalesQuery:  =>
+                    ^^
+  
+  SyntaxError: Unexpected token '=>'
+      at Object.compileFunction (node:vm:360:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+      at Module._compile (node:internal/modules/cjs/loader:1083:27)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\sales.ctrl.js:9:42)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '=>'\n" +
+    'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\query\\sales.query.js:19\n' +
+    '  getSalesQuery:  =>\n' +
+    '                  ^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '=>'\n" +
+    '    at Object.compileFunction (node:vm:360:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1048:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1083:27)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:9:42)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)',
+  stack: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\query\\sales.query.js:19\n' +
+    '  getSalesQuery:  =>\n' +
+    '                  ^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '=>'\n" +
+    '    at Object.compileFunction (node:vm:360:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1048:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1083:27)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:9:42)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)',
+  exception: true,
+  date: 'Wed Dec 28 2022 22:28:44 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 10616,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 57847808,
+      heapTotal: 31612928,
+      heapUsed: 19976584,
+      external: 1275355,
+      arrayBuffers: 529089
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 79383 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 360,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1048,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1083,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 42,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-28 22:28:44'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::8500
+      at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+      at listenInCluster (node:net:1533:12)
+      at Server.listen (node:net:1621:7)
+      at Function.listen (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\express\lib\application.js:635:24)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\server.js:13:8)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 8500
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::8500\n' +
+    'Error: listen EADDRINUSE: address already in use :::8500\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1485:16)\n' +
+    '    at listenInCluster (node:net:1533:12)\n' +
+    '    at Server.listen (node:net:1621:7)\n' +
+    '    at Function.listen (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js:13:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::8500\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1485:16)\n' +
+    '    at listenInCluster (node:net:1533:12)\n' +
+    '    at Server.listen (node:net:1621:7)\n' +
+    '    at Function.listen (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js:13:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Wed Dec 28 2022 22:30:32 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 12268,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 62377984,
+      heapTotal: 34496512,
+      heapUsed: 18049184,
+      external: 972126,
+      arrayBuffers: 154381
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 79492 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1485,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1533,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1621,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js',
+      function: null,
+      line: 13,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-28 22:30:32'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::8500
+      at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+      at listenInCluster (node:net:1533:12)
+      at Server.listen (node:net:1621:7)
+      at Function.listen (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\express\lib\application.js:635:24)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\server.js:13:8)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 8500
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::8500\n' +
+    'Error: listen EADDRINUSE: address already in use :::8500\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1485:16)\n' +
+    '    at listenInCluster (node:net:1533:12)\n' +
+    '    at Server.listen (node:net:1621:7)\n' +
+    '    at Function.listen (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js:13:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::8500\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1485:16)\n' +
+    '    at listenInCluster (node:net:1533:12)\n' +
+    '    at Server.listen (node:net:1621:7)\n' +
+    '    at Function.listen (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js:13:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)',
+  exception: true,
+  date: 'Wed Dec 28 2022 22:30:38 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 21192,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 62345216,
+      heapTotal: 33710080,
+      heapUsed: 18630224,
+      external: 1022941,
+      arrayBuffers: 199085
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 79497 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1485,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1533,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 1621,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js',
+      function: null,
+      line: 13,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 81,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-28 22:30:38'
+}
+{
+  error: C:\Users\harih\OneDrive\Documents\Pos_Services\app\query\sales.query.js:19
+    getSalesQuery: =>
+                   ^^
+  
+  SyntaxError: Unexpected token '=>'
+      at Object.compileFunction (node:vm:360:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1048:15)
+      at Module._compile (node:internal/modules/cjs/loader:1083:27)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\sales.ctrl.js:9:42)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '=>'\n" +
+    'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\query\\sales.query.js:19\n' +
+    '  getSalesQuery: =>\n' +
+    '                 ^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '=>'\n" +
+    '    at Object.compileFunction (node:vm:360:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1048:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1083:27)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:9:42)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)',
+  stack: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\query\\sales.query.js:19\n' +
+    '  getSalesQuery: =>\n' +
+    '                 ^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '=>'\n" +
+    '    at Object.compileFunction (node:vm:360:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1048:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1083:27)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:9:42)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)',
+  exception: true,
+  date: 'Wed Dec 28 2022 22:32:11 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 12916,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 57741312,
+      heapTotal: 31875072,
+      heapUsed: 19904352,
+      external: 1275355,
+      arrayBuffers: 529089
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 79591 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 360,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1048,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1083,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 42,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-28 22:32:11'
+}
+{
+  error: ReferenceError: deleteSales is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:50:43)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: deleteSales is not defined\n' +
+    'ReferenceError: deleteSales is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:50:43)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: deleteSales is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:50:43)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Wed Dec 28 2022 23:05:24 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 16072,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 61550592,
+      heapTotal: 33185792,
+      heapUsed: 18339768,
+      external: 997637,
+      arrayBuffers: 193377
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 81584 },
+  trace: [
+    {
+      column: 43,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-28 23:05:24'
+}
+{
+  error: ReferenceError: salesMasterID is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\query\sales.query.js:22:21)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\sales.ctrl.js:9:42)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: salesMasterID is not defined\n' +
+    'ReferenceError: salesMasterID is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\query\\sales.query.js:22:21)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:9:42)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: salesMasterID is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\query\\sales.query.js:22:21)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:9:42)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Wed Dec 28 2022 23:06:11 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 8968,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 58331136,
+      heapTotal: 31612928,
+      heapUsed: 19973584,
+      external: 1275355,
+      arrayBuffers: 529089
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 81630 },
+  trace: [
+    {
+      column: 21,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\query\\sales.query.js',
+      function: null,
+      line: 22,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 42,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-28 23:06:11'
+}
+{
+  error: Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+      at Sequence._packetToError (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      --------------------
+      at Pool.query (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:5:12)
+      at module.exports.deleteSales (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\sales.ctrl.js:71:26) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlMessage: "Unknown column 'undefined' in 'where clause'",
+    sqlState: '42S22',
+    index: 0,
+    sql: 'Delete from salesMaster where salesMasterID=undefined;\n' +
+      '  Delete from salesProducts where salesMasterID=undefined'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n" +
+    "Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteSales (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:71:26)',
+  stack: "Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteSales (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:71:26)',
+  exception: true,
+  date: 'Wed Dec 28 2022 23:12:27 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 20248,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 51798016,
+      heapTotal: 17981440,
+      heapUsed: 15708328,
+      external: 873442,
+      arrayBuffers: 33671
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 82007 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 513,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 324,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js',
+      function: 'module.exports.deleteSales',
+      line: 71,
+      method: 'deleteSales',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-28 23:12:27'
+}
+{
+  error: Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+      at Sequence._packetToError (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      --------------------
+      at Pool.query (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:5:12)
+      at module.exports.deleteSales (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\sales.ctrl.js:71:26) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlMessage: "Unknown column 'undefined' in 'where clause'",
+    sqlState: '42S22',
+    index: 0,
+    sql: 'Delete from salesMaster where salesMaster.salesMasterID=undefined;\n' +
+      '  Delete from salesProducts where salesProducts.salesMasterID=undefined'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n" +
+    "Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteSales (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:71:26)',
+  stack: "Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteSales (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:71:26)',
+  exception: true,
+  date: 'Wed Dec 28 2022 23:13:20 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 13520,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 62930944,
+      heapTotal: 33972224,
+      heapUsed: 20020840,
+      external: 1060342,
+      arrayBuffers: 218582
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 82059 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 513,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 324,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js',
+      function: 'module.exports.deleteSales',
+      line: 71,
+      method: 'deleteSales',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-28 23:13:20'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from salesMaster where salesMaster.salesMasterID=2;
+    Delete * from salesProdu' at line 1
+      at Sequence._packetToError (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      --------------------
+      at Pool.query (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:5:12)
+      at module.exports.deleteSales (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\sales.ctrl.js:71:26) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from salesMaster where salesMaster.salesMasterID=2;\n" +
+      "  Delete * from salesProdu' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: 'Delete * from salesMaster where salesMaster.salesMasterID=2;\n' +
+      '  Delete * from salesProducts where salesProducts.salesMasterID=2'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from salesMaster where salesMaster.salesMasterID=2;\n" +
+    "  Delete * from salesProdu' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from salesMaster where salesMaster.salesMasterID=2;\n" +
+    "  Delete * from salesProdu' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteSales (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:71:26)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from salesMaster where salesMaster.salesMasterID=2;\n" +
+    "  Delete * from salesProdu' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.deleteSales (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js:71:26)',
+  exception: true,
+  date: 'Wed Dec 28 2022 23:14:16 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 9224,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 51335168,
+      heapTotal: 17719296,
+      heapUsed: 15791712,
+      external: 873624,
+      arrayBuffers: 33853
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 82116 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 513,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 324,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\sales.ctrl.js',
+      function: 'module.exports.deleteSales',
+      line: 71,
+      method: 'deleteSales',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-28 23:14:16'
+}
