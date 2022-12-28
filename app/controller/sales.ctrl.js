@@ -28,7 +28,7 @@ module.exports.addSales = async (req, res) => {
     try {
       await SalesSchema.validateAsync(req.body);
       const resp = await query(addSalesQuery(req.body));
-
+      console.log(resp);
       const rows = mysqlSingleResponseHandler(resp);
 
       responseHandler.successResponse(

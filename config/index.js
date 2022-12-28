@@ -11,6 +11,7 @@ const env = () => {
       database: dbConfig.database,
       user: dbConfig.user,
       password: dbConfig.password,
+      multipleStatements: true
     },
   };
 };
