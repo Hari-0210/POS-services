@@ -27,7 +27,22 @@ values
       storeID !== 0 ? `where (sm.storeID = ${storeID})` : ""
     }
   `,
-
+  updateSalesQuery: (data) =>
+    `Update salesMaster set (customerID =${
+      data.customerID
+    },totalNoofProducts =${data.totalNoofProducts},subTotal ='${
+      data.subTotal
+    }',discount =${data.discount},packingCost =${data.packingCost},total ='${
+      data.total
+    }') where salesMasterID = ${data.salesMasterID};
+    ${data.products
+      .map((x) => {
+        return `Update  salesProducts set
+      (productID =${productID}, productQty =${productQty}) 
+      where salesMasterID = ${salesMasterID} and salesProductID = ${salesProductID}`;
+      })
+      .join(";")};
+    `,
   deleteSalesQuery: (
     salesMasterID
   ) => `Delete from salesMaster where salesMaster.salesMasterID=${salesMasterID};

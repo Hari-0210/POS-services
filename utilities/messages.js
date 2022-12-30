@@ -5,8 +5,11 @@ exports.responseMessages = {
   updateProductCategorySuccessfully: " Successfully Updated Product Category",
   getBrandSuccessfully: "Get All Brand List",
   updateBrandSuccessfully: " Successfully Updated Brand Category",
+  updateSalesSuccessfully: " Successfully Updated Sales Category",
+  getStoreSuccessfully: "Get All Brand List",
+  updateStoreSuccessfully: " Successfully Updated Store Category",
+
   addProduct: "Product Added Successfully",
   updateProduct: "Product Updated Successfully",
   getCustomer: "Get Customer List",
-
 };
