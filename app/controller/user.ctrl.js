@@ -55,6 +55,7 @@ module.exports.addUser = async (req, res) => {
     const loginSchema = Joi.object({
       userName: Joi.string().required(),
       password: Joi.string().required(),
+      storeID: Joi.number().required(),
     });
     try {
       await loginSchema.validateAsync(req.body);
@@ -77,7 +78,7 @@ module.exports.addUser = async (req, res) => {
 
 module.exports.getUser = async (req, res) => {
   try {
-    const resp = await query(getUserQuery);
+    const resp = await query(getUserQuery(req.user.storeID));
     let list = mysqlResponseHandler(resp);
 
     responseHandler.successResponse(res, list, responseMessages.getUser);
