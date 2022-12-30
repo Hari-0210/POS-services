@@ -1,0 +1,1810 @@
+{
+  error: Error: ER_DUP_ENTRY: Duplicate entry 'Crackers' for key 'productCategoryName_UNIQUE'
+      at Sequence._packetToError (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      --------------------
+      at Pool.query (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:5:12)
+      at module.exports.addProductCategory (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\product.ctrl.js:30:26)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    code: 'ER_DUP_ENTRY',
+    errno: 1062,
+    sqlMessage: "Duplicate entry 'Crackers' for key 'productCategoryName_UNIQUE'",
+    sqlState: '23000',
+    index: 0,
+    sql: "Insert into productCategory (productCategoryName,storeID) values ('Crackers',1)"
+  },
+  level: 'error',
+  message: "uncaughtException: ER_DUP_ENTRY: Duplicate entry 'Crackers' for key 'productCategoryName_UNIQUE'\n" +
+    "Error: ER_DUP_ENTRY: Duplicate entry 'Crackers' for key 'productCategoryName_UNIQUE'\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.addProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:30:26)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: "Error: ER_DUP_ENTRY: Duplicate entry 'Crackers' for key 'productCategoryName_UNIQUE'\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.addProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:30:26)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  exception: true,
+  date: 'Fri Dec 30 2022 22:32:36 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 13404,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 51433472,
+      heapTotal: 19554304,
+      heapUsed: 18034152,
+      external: 886268,
+      arrayBuffers: 46497
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 252410 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 513,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 324,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js',
+      function: 'module.exports.addProductCategory',
+      line: 30,
+      method: 'addProductCategory',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'process.processTicksAndRejections',
+      line: 95,
+      method: 'processTicksAndRejections',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 22:32:36'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (storeID = 1) ORDER BY createdDate DESC' at line 1
+      at Sequence._packetToError (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      --------------------
+      at Pool.query (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:5:12)
+      at exports.getProductCategory (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\product.ctrl.js:62:24)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (storeID = 1) ORDER BY createdDate DESC' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: "Select * from productCategory where (productCategoryName LIKE '%c%') where (storeID = 1) ORDER BY createdDate DESC"
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (storeID = 1) ORDER BY createdDate DESC' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (storeID = 1) ORDER BY createdDate DESC' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:62:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (storeID = 1) ORDER BY createdDate DESC' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:62:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  exception: true,
+  date: 'Fri Dec 30 2022 22:35:46 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 24092,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 52662272,
+      heapTotal: 18505728,
+      heapUsed: 16838432,
+      external: 882732,
+      arrayBuffers: 42961
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 252600 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 513,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 324,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js',
+      function: 'exports.getProductCategory',
+      line: 62,
+      method: 'getProductCategory',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'process.processTicksAndRejections',
+      line: 95,
+      method: 'processTicksAndRejections',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 22:35:46'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (storeID = 1) ORDER BY createdDate DESC' at line 1
+      at Sequence._packetToError (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      --------------------
+      at Pool.query (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:5:12)
+      at exports.getProductCategory (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\product.ctrl.js:62:24)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (storeID = 1) ORDER BY createdDate DESC' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: "Select * from productCategory where (productCategoryName LIKE '%d%') where (storeID = 1) ORDER BY createdDate DESC"
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (storeID = 1) ORDER BY createdDate DESC' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (storeID = 1) ORDER BY createdDate DESC' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:62:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (storeID = 1) ORDER BY createdDate DESC' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:62:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  exception: true,
+  date: 'Fri Dec 30 2022 22:37:04 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 22712,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 52903936,
+      heapTotal: 18243584,
+      heapUsed: 16863936,
+      external: 969548,
+      arrayBuffers: 129777
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 252678 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 513,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 324,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js',
+      function: 'exports.getProductCategory',
+      line: 62,
+      method: 'getProductCategory',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'process.processTicksAndRejections',
+      line: 95,
+      method: 'processTicksAndRejections',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 22:37:04'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (storeID = 1) ORDER BY createdDate DESC' at line 1
+      at Sequence._packetToError (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      --------------------
+      at Pool.query (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:5:12)
+      at exports.getProductCategory (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\product.ctrl.js:62:24)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (storeID = 1) ORDER BY createdDate DESC' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: 'Select * from productCategory  and (storeID = 1) ORDER BY createdDate DESC'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (storeID = 1) ORDER BY createdDate DESC' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (storeID = 1) ORDER BY createdDate DESC' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:62:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and (storeID = 1) ORDER BY createdDate DESC' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:62:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  exception: true,
+  date: 'Fri Dec 30 2022 22:37:37 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 3108,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 64389120,
+      heapTotal: 34234368,
+      heapUsed: 20447152,
+      external: 1129389,
+      arrayBuffers: 287040
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 252712 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 513,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 324,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js',
+      function: 'exports.getProductCategory',
+      line: 62,
+      method: 'getProductCategory',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'process.processTicksAndRejections',
+      line: 95,
+      method: 'processTicksAndRejections',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 22:37:37'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(storeID = 1) ORDER BY createdDate DESC' at line 1
+      at Sequence._packetToError (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      --------------------
+      at Pool.query (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:5:12)
+      at exports.getProductCategory (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\product.ctrl.js:62:24)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(storeID = 1) ORDER BY createdDate DESC' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: 'Select * from productCategory    (storeID = 1) ORDER BY createdDate DESC'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(storeID = 1) ORDER BY createdDate DESC' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(storeID = 1) ORDER BY createdDate DESC' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:62:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(storeID = 1) ORDER BY createdDate DESC' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:62:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  exception: true,
+  date: 'Fri Dec 30 2022 22:39:42 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 2348,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 63803392,
+      heapTotal: 34496512,
+      heapUsed: 20094216,
+      external: 1123677,
+      arrayBuffers: 281328
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 252836 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 513,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 324,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js',
+      function: 'exports.getProductCategory',
+      line: 62,
+      method: 'getProductCategory',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'process.processTicksAndRejections',
+      line: 95,
+      method: 'processTicksAndRejections',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 22:39:42'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(where storeID = 1)    ORDER BY createdDate DESC' at line 1
+      at Sequence._packetToError (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      --------------------
+      at Pool.query (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:5:12)
+      at exports.getProductCategory (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\product.ctrl.js:62:24)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(where storeID = 1)    ORDER BY createdDate DESC' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: 'Select * from productCategory  (where storeID = 1)    ORDER BY createdDate DESC'
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(where storeID = 1)    ORDER BY createdDate DESC' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(where storeID = 1)    ORDER BY createdDate DESC' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:62:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(where storeID = 1)    ORDER BY createdDate DESC' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:62:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  exception: true,
+  date: 'Fri Dec 30 2022 22:40:30 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 22788,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 64303104,
+      heapTotal: 33972224,
+      heapUsed: 20482288,
+      external: 1137586,
+      arrayBuffers: 295237
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 252884 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 513,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 324,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js',
+      function: 'exports.getProductCategory',
+      line: 62,
+      method: 'getProductCategory',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'process.processTicksAndRejections',
+      line: 95,
+      method: 'processTicksAndRejections',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 22:40:30'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '( and productCategoryName LIKE '%g%') ORDER BY createdDate DESC' at line 1
+      at Sequence._packetToError (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      --------------------
+      at Pool.query (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:5:12)
+      at exports.getProductCategory (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\product.ctrl.js:62:24)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '( and productCategoryName LIKE '%g%') ORDER BY createdDate DESC' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: "Select * from productCategory where ( storeID = 1)    ( and productCategoryName LIKE '%g%') ORDER BY createdDate DESC"
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '( and productCategoryName LIKE '%g%') ORDER BY createdDate DESC' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '( and productCategoryName LIKE '%g%') ORDER BY createdDate DESC' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:62:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '( and productCategoryName LIKE '%g%') ORDER BY createdDate DESC' at line 1\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProductCategory (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:62:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  exception: true,
+  date: 'Fri Dec 30 2022 22:41:38 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 16268,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 52457472,
+      heapTotal: 18767872,
+      heapUsed: 16319912,
+      external: 873974,
+      arrayBuffers: 34203
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 252952 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 513,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 324,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js',
+      function: 'exports.getProductCategory',
+      line: 62,
+      method: 'getProductCategory',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'process.processTicksAndRejections',
+      line: 95,
+      method: 'processTicksAndRejections',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 22:41:38'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (product.storeID = 1) ORDER BY createdDate DESC' at line 2
+      at Sequence._packetToError (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      --------------------
+      at Pool.query (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:5:12)
+      at exports.getProduct (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\product.ctrl.js:163:24)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (product.storeID = 1) ORDER BY createdDate DESC' at line 2",
+    sqlState: '42000',
+    index: 0,
+    sql: "Select product.*,CONVERT_TZ(product.createdDate,'+00:00','+12:30') createdDate,brand.brandName as brandName,productCategory.productCategoryName as productCategoryName from product \n" +
+      '    left join brand on brand.brandID = product.brand\n' +
+      "    Left join productCategory on productCategory.productCategoryID = product.productCategory where (product.productName LIKE '%f%')where (product.storeID = 1) ORDER BY createdDate DESC"
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (product.storeID = 1) ORDER BY createdDate DESC' at line 2\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (product.storeID = 1) ORDER BY createdDate DESC' at line 2\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProduct (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:163:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where (product.storeID = 1) ORDER BY createdDate DESC' at line 2\n" +
+    '    at Sequence._packetToError (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:513:28)\n' +
+    '    at addChunk (node:internal/streams/readable:324:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProduct (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:163:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  exception: true,
+  date: 'Fri Dec 30 2022 22:56:56 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 3136,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 52207616,
+      heapTotal: 17981440,
+      heapUsed: 16732720,
+      external: 885746,
+      arrayBuffers: 45975
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 253870 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 513,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 324,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js',
+      function: 'exports.getProduct',
+      line: 163,
+      method: 'getProduct',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'process.processTicksAndRejections',
+      line: 95,
+      method: 'processTicksAndRejections',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 22:56:56'
+}

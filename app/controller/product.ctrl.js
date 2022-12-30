@@ -28,7 +28,7 @@ module.exports.addProductCategory = async (req, res) => {
     try {
       await productCategorySchema.validateAsync(req.body);
       const resp = await query(
-        addProductCategoryQuery(req.body.productCategoryName,req.user.storeID)
+        addProductCategoryQuery(req.body.productCategoryName, req.user.storeID)
       );
       const rows = mysqlSingleResponseHandler(resp);
       responseHandler.successResponse(
@@ -59,7 +59,9 @@ exports.getProductCategory = async (req, res) => {
       return false;
     }
 
-    const resp = await query(getProductCategoryQuery(req.body.searchText, req.user.storeID));
+    const resp = await query(
+      getProductCategoryQuery(req.body.searchText, req.user.storeID)
+    );
     let list = mysqlResponseHandler(resp);
     responseHandler.successResponse(
       res,
@@ -129,17 +131,14 @@ module.exports.addProduct = async (req, res) => {
       productName: Joi.string().required(),
       productCode: Joi.string().required(),
       productCategory: Joi.number().required(),
-      brand: Joi.number().required(),
-      productQty: Joi.number().required(),
+      // brand: Joi.number().required(),
+      // productQty: Joi.number().required(),
       productCost: Joi.string().required(),
     });
     try {
       await productSchema.validateAsync(req.body);
       const resp = await addProductSP(req.body, req.user.storeID);
-      responseHandler.successResponse(
-        res,
-        responseMessages.addProduct
-      );
+      responseHandler.successResponse(res, responseMessages.addProduct);
     } catch (err) {
       responseHandler.errorResponse(res, err.message, err.message);
     }
@@ -161,7 +160,9 @@ exports.getProduct = async (req, res) => {
       return false;
     }
 
-    const resp = await query(getProductQuery(req.body.searchText, req.user.storeID));
+    const resp = await query(
+      getProductQuery(req.body.searchText, req.user.storeID)
+    );
     let list = mysqlResponseHandler(resp);
     responseHandler.successResponse(
       res,
@@ -180,13 +181,13 @@ module.exports.updateProduct = async (req, res) => {
       productName: Joi.string().required(),
       productCode: Joi.string().required(),
       productCategory: Joi.number().required(),
-      brand: Joi.number().required(),
-      productQty: Joi.number().required(),
+      // brand: Joi.number().required(),
+      // productQty: Joi.number().required(),
       productCost: Joi.string().required(),
     });
     try {
       await productSchema.validateAsync(req.body);
-      const resp = await updateProductSP(req.body);
+      const resp = await updateProductSP(req.body, req.user.storeID);
       responseHandler.successResponse(res, responseMessages.updateProduct);
     } catch (err) {
       responseHandler.errorResponse(res, err.message, err.message);
