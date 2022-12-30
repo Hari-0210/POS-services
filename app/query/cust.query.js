@@ -1,3 +1,5 @@
 module.exports = {
-  getCustomer: `Select * from customer`,
+  getCustomer:(storeID) => `Select * from customer ${
+    storeID !== 0 ? `where (storeID = ${storeID})` : ""
+  }`,
 };

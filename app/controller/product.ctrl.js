@@ -24,7 +24,7 @@ module.exports.addProductCategory = async (req, res) => {
     try {
       await productCategorySchema.validateAsync(req.body);
       const resp = await query(
-        addProductCategoryQuery(req.body.productCategoryName)
+        addProductCategoryQuery(req.body.productCategoryName,req.user.storeID)
       );
       const rows = mysqlSingleResponseHandler(resp);
       responseHandler.successResponse(
@@ -55,7 +55,7 @@ exports.getProductCategory = async (req, res) => {
       return false;
     }
 
-    const resp = await query(getProductCategoryQuery(req.body.searchText));
+    const resp = await query(getProductCategoryQuery(req.body.searchText, req.user.storeID));
     let list = mysqlResponseHandler(resp);
     responseHandler.successResponse(
       res,
@@ -130,7 +130,7 @@ module.exports.addProduct = async (req, res) => {
     });
     try {
       await productSchema.validateAsync(req.body);
-      const resp = await addProductSP(req.body);
+      const resp = await addProductSP(req.body, req.user.storeID);
       responseHandler.successResponse(
         res,
         responseMessages.addProduct
@@ -156,7 +156,7 @@ exports.getProduct = async (req, res) => {
       return false;
     }
 
-    const resp = await query(getProductQuery(req.body.searchText));
+    const resp = await query(getProductQuery(req.body.searchText, req.user.storeID));
     let list = mysqlResponseHandler(resp);
     responseHandler.successResponse(
       res,

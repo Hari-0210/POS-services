@@ -1,6 +1,6 @@
 const { con } = require("../../config/mysqldb");
 
-module.exports.addProductSP = async (values) => {
+module.exports.addProductSP = async (values, storeID) => {
   return new Promise((res, rej) => {
     let sql = `CALL create_product(?,?,?,?,?,?)`;
     con.query(
@@ -9,9 +9,9 @@ module.exports.addProductSP = async (values) => {
         values.productName,
         values.productCode,
         values.productCategory,
-        values.brand,
         values.productQty,
         values.productCost,
+        storeID
       ],
       function (err, result) {
         if (err) {

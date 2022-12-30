@@ -17,7 +17,6 @@ module.exports = {
           const bearer = token.split(" ");
           const bearerToken = bearer[1];
           req.user = jwtDecode(bearerToken);
-          req.employee = jwtDecode(bearerToken);
           next();
         } else {
           responseHandler.errorResponse(

@@ -10,7 +10,7 @@ const { getCustomer } = require("../query/cust.query");
 const { addCustomerSP } = require("../services/cust.services");
 module.exports.getCustomer = async (req, res) => {
   try {
-    const resp = await query(getCustomer);
+    const resp = await query(getCustomer(req.user.storeID));
 
     let list = mysqlResponseHandler(resp);
 
@@ -29,7 +29,7 @@ module.exports.addCustomer = async (req, res) => {
     });
     try {
       await customerSchema.validateAsync(req.body);
-      const resp = await addCustomerSP(req.body)
+      const resp = await addCustomerSP(req.body,req.user.storeID)
       const rows = mysqlSingleResponseHandler(resp);
       responseHandler.successResponse(
         res,

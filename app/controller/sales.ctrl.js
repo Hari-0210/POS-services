@@ -31,7 +31,7 @@ module.exports.addSales = async (req, res) => {
 
     try {
       await SalesSchema.validateAsync(req.body);
-      const resp = await query(addSalesQuery(req.body));
+      const resp = await query(addSalesQuery(req.body, req.user.storeID));
       console.log(resp);
       const rows = mysqlSingleResponseHandler(resp);
 
@@ -51,7 +51,7 @@ module.exports.addSales = async (req, res) => {
 };
 module.exports.getSales = async (req, res) => {
   try {
-    const resp = await query(getSalesQuery);
+    const resp = await query(getSalesQuery(req.user.storeID));
 
     let list = mysqlResponseHandler(resp);
 

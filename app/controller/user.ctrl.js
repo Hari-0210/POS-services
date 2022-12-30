@@ -37,7 +37,7 @@ module.exports.login = async (req, res) => {
       responseHandler.successResponse(
         res,
         {
-          token: generateToken(rows.userName),
+          token: generateToken(rows),
           ...rows,
         },
         "Successfully Login"
