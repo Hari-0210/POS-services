@@ -14,7 +14,11 @@ const {
   getProductQuery,
   deleteProductQuery,
 } = require("../query/product.query");
-const { addProductSP, updateProductSP, deleteProductCategorySP } = require("../services/product.services");
+const {
+  addProductSP,
+  updateProductSP,
+  deleteProductCategorySP,
+} = require("../services/product.services");
 
 module.exports.addProductCategory = async (req, res) => {
   try {
@@ -83,7 +87,8 @@ module.exports.updateProductCategory = async (req, res) => {
       );
       const rows = mysqlSingleResponseHandler(resp);
       responseHandler.successResponse(
-        res,{...rows},
+        res,
+        { ...rows },
         responseMessages.updateProductCategorySuccessfully
       );
     } catch (err) {
@@ -101,7 +106,7 @@ module.exports.deleteProductCategory = async (req, res) => {
     });
     try {
       await productCategorySchema.validateAsync(req.params);
-      const resp = await deleteProductCategorySP(req.params.productCategoryID)
+      const resp = await deleteProductCategorySP(req.params.productCategoryID);
       const rows = mysqlSingleResponseHandler(resp);
       responseHandler.successResponse(
         res,
@@ -131,10 +136,7 @@ module.exports.addProduct = async (req, res) => {
     try {
       await productSchema.validateAsync(req.body);
       const resp = await addProductSP(req.body);
-      responseHandler.successResponse(
-        res,
-        responseMessages.addProduct
-      );
+      responseHandler.successResponse(res, responseMessages.addProduct);
     } catch (err) {
       responseHandler.errorResponse(res, err.message, err.message);
     }
@@ -182,10 +184,7 @@ module.exports.updateProduct = async (req, res) => {
     try {
       await productSchema.validateAsync(req.body);
       const resp = await updateProductSP(req.body);
-      responseHandler.successResponse(
-        res,
-        responseMessages.updateProduct
-      );
+      responseHandler.successResponse(res, responseMessages.updateProduct);
     } catch (err) {
       responseHandler.errorResponse(res, err.message, err.message);
     }
@@ -201,9 +200,7 @@ module.exports.deleteProduct = async (req, res) => {
     });
     try {
       await productSchema.validateAsync(req.params);
-      const resp = await query(
-        deleteProductQuery(req.params.productID)
-      );
+      const resp = await query(deleteProductQuery(req.params.productID));
       const rows = mysqlSingleResponseHandler(resp);
       responseHandler.successResponse(
         res,

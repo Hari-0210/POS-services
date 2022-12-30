@@ -7759,3 +7759,2303 @@
   ],
   timestamp: '2022-12-29 09:52:31'
 }
+{
+  error: Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:26)
+      --------------------
+      at Protocol._enqueue (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:48:16)
+      at Pool.query (C:\Users\harih\OneDrive\Documents\Pos_Services\node_modules\mysql\lib\Pool.js:202:8)
+      at C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\harih\OneDrive\Documents\Pos_Services\helper\executequery.js:5:12)
+      at exports.getProduct (C:\Users\harih\OneDrive\Documents\Pos_Services\app\controller\product.ctrl.js:159:24)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'bom1plzcpnl493931.prod.bom1.secureserver.net',
+    fatal: true
+  },
+  level: 'error',
+  message: 'uncaughtException: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    'Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    '    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:26)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:202:8)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProduct (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:159:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: 'Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    '    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:26)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at Pool.query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js:202:8)\n' +
+    '    at C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js:5:12)\n' +
+    '    at exports.getProduct (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js:159:24)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  exception: true,
+  date: 'Fri Dec 30 2022 13:40:17 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 18588,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 36556800,
+      heapTotal: 19816448,
+      heapUsed: 18358240,
+      external: 909264,
+      arrayBuffers: 69493
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 220476 },
+  trace: [
+    {
+      column: 26,
+      file: 'node:dns',
+      function: 'GetAddrInfoReqWrap.onlookup [as oncomplete]',
+      line: 111,
+      method: 'onlookup [as oncomplete]',
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 202,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\controller\\product.ctrl.js',
+      function: 'exports.getProduct',
+      line: 159,
+      method: 'getProduct',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'process.processTicksAndRejections',
+      line: 95,
+      method: 'processTicksAndRejections',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 13:40:17'
+}
+{
+  error: ReferenceError: addStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:51:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: addStore is not defined\n' +
+    'ReferenceError: addStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:51:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: addStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:51:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:02:32 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 15724,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 62132224,
+      heapTotal: 33710080,
+      heapUsed: 18478752,
+      external: 1003345,
+      arrayBuffers: 199085
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 243412 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 51,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:02:32'
+}
+{
+  error: ReferenceError: addStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:51:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: addStore is not defined\n' +
+    'ReferenceError: addStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:51:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: addStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:51:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:02:56 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 10392,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 61530112,
+      heapTotal: 33972224,
+      heapUsed: 18776416,
+      external: 1021823,
+      arrayBuffers: 217563
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 243436 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 51,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:02:56'
+}
+{
+  error: ReferenceError: addStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:51:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: addStore is not defined\n' +
+    'ReferenceError: addStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:51:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: addStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:51:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:03:17 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 11564,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 62152704,
+      heapTotal: 33972224,
+      heapUsed: 18369000,
+      external: 997637,
+      arrayBuffers: 193377
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 243457 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 51,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:03:17'
+}
+{
+  error: ReferenceError: addStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:51:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: addStore is not defined\n' +
+    'ReferenceError: addStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:51:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: addStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:51:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:06:24 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 16660,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 61902848,
+      heapTotal: 33710080,
+      heapUsed: 18488048,
+      external: 997637,
+      arrayBuffers: 193377
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 243644 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 51,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:06:24'
+}
+{
+  error: ReferenceError: getStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:53:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: getStore is not defined\n' +
+    'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:06:44 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 4644,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 61124608,
+      heapTotal: 33710080,
+      heapUsed: 19105528,
+      external: 1050262,
+      arrayBuffers: 246591
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 243664 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:06:44'
+}
+{
+  error: ReferenceError: getStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:53:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: getStore is not defined\n' +
+    'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:07:03 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 5080,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 61845504,
+      heapTotal: 33972224,
+      heapUsed: 17831376,
+      external: 972566,
+      arrayBuffers: 168895
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 243682 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:07:03'
+}
+{
+  error: ReferenceError: getStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:53:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: getStore is not defined\n' +
+    'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:07:16 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 20776,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 61947904,
+      heapTotal: 33447936,
+      heapUsed: 18396960,
+      external: 1003345,
+      arrayBuffers: 199085
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 243696 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:07:16'
+}
+{
+  error: ReferenceError: getStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:53:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: getStore is not defined\n' +
+    'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:07:43 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 21724,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 62091264,
+      heapTotal: 34496512,
+      heapUsed: 18228136,
+      external: 989445,
+      arrayBuffers: 185185
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 243722 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:07:43'
+}
+{
+  error: ReferenceError: getStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:53:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: getStore is not defined\n' +
+    'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:08:36 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 7604,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 61751296,
+      heapTotal: 34496512,
+      heapUsed: 18221280,
+      external: 988856,
+      arrayBuffers: 185185
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 243776 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:08:36'
+}
+{
+  error: ReferenceError: getStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:53:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: getStore is not defined\n' +
+    'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:09:01 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 9576,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 62656512,
+      heapTotal: 34496512,
+      heapUsed: 18236712,
+      external: 989445,
+      arrayBuffers: 185185
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 243800 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:09:01'
+}
+{
+  error: ReferenceError: getStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:53:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: getStore is not defined\n' +
+    'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:09:26 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 16816,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 61648896,
+      heapTotal: 33972224,
+      heapUsed: 18391280,
+      external: 1003345,
+      arrayBuffers: 199085
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 243825 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:09:26'
+}
+{
+  error: ReferenceError: getStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:53:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: getStore is not defined\n' +
+    'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:11:40 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 10108,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 62210048,
+      heapTotal: 33972224,
+      heapUsed: 18433760,
+      external: 1003345,
+      arrayBuffers: 199085
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 243960 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:11:40'
+}
+{
+  error: ReferenceError: getStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:53:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: getStore is not defined\n' +
+    'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:13:44 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 10868,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 62095360,
+      heapTotal: 33972224,
+      heapUsed: 18484296,
+      external: 1003345,
+      arrayBuffers: 199085
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 244083 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:13:44'
+}
+{
+  error: ReferenceError: getStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:53:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: getStore is not defined\n' +
+    'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:14:12 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 7672,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 62226432,
+      heapTotal: 34758656,
+      heapUsed: 18066248,
+      external: 980758,
+      arrayBuffers: 177087
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 244111 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:14:12'
+}
+{
+  error: ReferenceError: getStore is not defined
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\app\routes.js:53:26)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+      at Module.load (node:internal/modules/cjs/loader:997:32)
+      at Module._load (node:internal/modules/cjs/loader:838:12)
+      at Module.require (node:internal/modules/cjs/loader:1021:19)
+      at require (node:internal/modules/cjs/helpers:103:18)
+      at Object.<anonymous> (C:\Users\harih\OneDrive\Documents\Pos_Services\express\index.js:9:16)
+      at Module._compile (node:internal/modules/cjs/loader:1119:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1173:10),
+  level: 'error',
+  message: 'uncaughtException: getStore is not defined\n' +
+    'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  stack: 'ReferenceError: getStore is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js:53:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:997:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:838:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1021:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:103:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js:9:16)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1119:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)',
+  exception: true,
+  date: 'Fri Dec 30 2022 20:14:34 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 13860,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v18.8.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 62173184,
+      heapTotal: 33710080,
+      heapUsed: 18727376,
+      external: 1021823,
+      arrayBuffers: 217563
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 244133 },
+  trace: [
+    {
+      column: 26,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\app\\routes.js',
+      function: null,
+      line: 53,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 997,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 838,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1021,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\harih\\OneDrive\\Documents\\Pos_Services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1119,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1173,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2022-12-30 20:14:34'
+}

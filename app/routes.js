@@ -16,7 +16,18 @@ const {
   updateProduct,
   deleteProduct,
 } = require("./controller/product.ctrl");
-const { addSales, getSales, deleteSales } = require("./controller/sales.ctrl");
+const {
+  addSales,
+  getSales,
+  deleteSales,
+  updateSales,
+} = require("./controller/sales.ctrl");
+const {
+  addStore,
+  getStore,
+  updateStore,
+  deleteStore,
+} = require("./controller/store.ctrl");
 const { login, addUser, getUser } = require("./controller/user.ctrl");
 
 // CRUD User
@@ -42,11 +53,18 @@ router.post("/getBrand", getBrand);
 router.put("/updateBrand", updateBrand);
 router.get("/deleteBrand/:brandID", deleteBrand);
 
+// CRUD Store
+router.post("/addStore", addStore);
+router.post("/getStore", getStore);
+router.put("/updateStore", updateStore);
+router.get("/deleteStore/:storeID", deleteStore);
+
 router.get("/getCustomer", getCustomer);
 router.post("/addCustomer", addCustomer);
 
 router.post("/addSales", addSales);
 router.get("/getSales", getSales);
+router.put("/updateSales", updateSales);
 router.get("/deleteSales/:salesMasterID", deleteSales);
 
 module.exports = router;

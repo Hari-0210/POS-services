@@ -23,7 +23,22 @@ values
   where sp.salesMasterID = sm.salesMasterID) as salesProducts
     from salesMaster as sm left join customer as c on c.customerID = sm.customerID
   `,
-
+  updateSalesQuery: (data) =>
+    `Update salesMaster set (customerID =${
+      data.customerID
+    },totalNoofProducts =${data.totalNoofProducts},subTotal ='${
+      data.subTotal
+    }',discount =${data.discount},packingCost =${data.packingCost},total ='${
+      data.total
+    }') where salesMasterID = ${data.salesMasterID};
+    ${data.products
+      .map((x) => {
+        return `Update  salesProducts set
+      (productID =${productID}, productQty =${productQty}) 
+      where salesMasterID = ${salesMasterID} and salesProductID = ${salesProductID}`;
+      })
+      .join(";")};
+    `,
   deleteSalesQuery: (
     salesMasterID
   ) => `Delete from salesMaster where salesMaster.salesMasterID=${salesMasterID};

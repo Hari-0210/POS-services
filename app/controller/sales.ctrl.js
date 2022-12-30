@@ -10,6 +10,7 @@ const {
   addSalesQuery,
   getSalesQuery,
   deleteSalesQuery,
+  updateSalesQuery,
 } = require("../query/sales.query");
 const { addSalesSP } = require("../services/sales.services");
 
@@ -56,6 +57,42 @@ module.exports.getSales = async (req, res) => {
     let list = mysqlResponseHandler(resp);
 
     responseHandler.successResponse(res, list, responseMessages.getSales);
+  } catch (err) {
+    responseHandler.errorResponse(res, err.message, commonErrorMessage);
+  }
+};
+
+module.exports.updateSales = async (req, res) => {
+  try {
+    const productsSchema = Joi.object().keys({
+      productID: Joi.number().required(),
+      productQty: Joi.number().required(),
+      salesMasterID: Joi.number().required(),
+      salesProductID: Joi.number().required(),
+    });
+    const SalesSchema = Joi.object({
+      salesMasterID: Joi.number().required(),
+      customerID: Joi.number().required(),
+      totalNoofProducts: Joi.number().required(),
+      subTotal: Joi.string().required(),
+      discount: Joi.number().required(),
+      packingCost: Joi.number().required(),
+      total: Joi.string().required(),
+      products: Joi.array().items(productsSchema),
+    });
+
+    try {
+      await SalesSchema.validateAsync(req.body);
+      const resp = await query(updateSalesQuery(req.body));
+      const rows = mysqlSingleResponseHandler(resp);
+      responseHandler.successResponse(
+        res,
+        { ...rows },
+        responseMessages.updateSalesSuccessfully
+      );
+    } catch (err) {
+      responseHandler.errorResponse(res, err.message, err.message);
+    }
   } catch (err) {
     responseHandler.errorResponse(res, err.message, commonErrorMessage);
   }
