@@ -18,12 +18,14 @@ values
 
   getSalesQuery: (
     storeID
-  ) => `Select sm.*, c.name as customerName,CONVERT_TZ(sm.createdTime,'+00:00','+12:30') createdTime,
+  ) => `Select sm.*,s.storeName, c.name as customerName,CONVERT_TZ(sm.createdTime,'+00:00','+12:30') createdTime,
   (select JSON_ARRAYAGG(JSON_OBJECT('productID',sp.productID,'productName', p.productName, 'productQty', sp.productQty)) 
   from salesProducts as sp 
   INNER JOIN product as p on p.productID = sp.productID
   where sp.salesMasterID = sm.salesMasterID) as salesProducts
-    from salesMaster as sm  left join customer as c on c.customerID = sm.customerID ${
+    from salesMaster as sm  
+    left join customer as c on c.customerID = sm.customerID
+    left join store as s on s.storeID = sm.storeID ${
       storeID !== 0 ? `where (sm.storeID = ${storeID})` : ""
     }
   `,

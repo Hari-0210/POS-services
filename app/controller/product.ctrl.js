@@ -13,6 +13,7 @@ const {
   deleteProductCategoryQuery,
   getProductQuery,
   deleteProductQuery,
+  getProductByCategoryQuery,
 } = require("../query/product.query");
 const {
   addProductSP,
@@ -116,6 +117,31 @@ module.exports.deleteProductCategory = async (req, res) => {
           ...rows,
         },
         "Successfully Deleted Product Category"
+      );
+    } catch (err) {
+      responseHandler.errorResponse(res, err.message, err.message);
+    }
+  } catch (err) {
+    responseHandler.errorResponse(res, err.message, commonErrorMessage);
+  }
+};
+module.exports.getProductByCategory = async (req, res) => {
+  try {
+    const productCategorySchema = Joi.object({
+      productCategoryID: Joi.number().required(),
+    });
+    try {
+      await productCategorySchema.validateAsync(req.params);
+      const resp = await query(
+        getProductByCategoryQuery(req.params.productCategoryID)
+      );
+      const rows = mysqlSingleResponseHandler(resp);
+      responseHandler.successResponse(
+        res,
+        {
+          ...rows,
+        },
+        "Successfully Product By Category"
       );
     } catch (err) {
       responseHandler.errorResponse(res, err.message, err.message);

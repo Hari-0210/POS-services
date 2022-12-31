@@ -12,7 +12,7 @@ const moment = require("moment");
 const { query } = require("../../helper/executequery");
 const { responseHandler } = require("../../utilities");
 const { login, getUser, getUserQuery } = require("../query/user.query");
-const { addUserSP } = require("../services/user.services");
+const { addUserSP, updateUserSP } = require("../services/user.services");
 
 module.exports.login = async (req, res) => {
   try {
@@ -61,6 +61,7 @@ module.exports.addUser = async (req, res) => {
       await loginSchema.validateAsync(req.body);
       var pass;
       pass = req.body.password;
+      req.body.pass =pass;
       req.body.password = await passwordHash(req.body.password);
       req.body.roleID = 2;
       const resp = await addUserSP(req.body);
@@ -68,6 +69,31 @@ module.exports.addUser = async (req, res) => {
         `select * from userDetails where userName = '${req.body.userName}'`
       );
       responseHandler.successResponse(res, user, "Successfully added");
+    } catch (err) {
+      responseHandler.errorResponse(res, err.message, err.message);
+    }
+  } catch (err) {
+    responseHandler.errorResponse(res, err.message, commonErrorMessage);
+  }
+};
+module.exports.updateUser = async (req, res) => {
+  try {
+    const loginSchema = Joi.object({
+      userID: Joi.number().required(),
+      userName: Joi.string().required(),
+      password: Joi.string().required(),
+      storeID: Joi.number().required(),
+    });
+    try {
+      await loginSchema.validateAsync(req.body);
+      var pass;
+      pass = req.body.password;
+      req.body.pass =pass;
+      req.body.password = await passwordHash(req.body.password);
+      req.body.roleID = 2;
+      const resp = await updateUserSP(req.body);
+      
+      responseHandler.successResponse(res, resp, "Successfully added");
     } catch (err) {
       responseHandler.errorResponse(res, err.message, err.message);
     }

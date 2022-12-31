@@ -15,6 +15,7 @@ const {
   getProduct,
   updateProduct,
   deleteProduct,
+  getProductByCategory,
 } = require("./controller/product.ctrl");
 const {
   addSales,
@@ -28,11 +29,12 @@ const {
   updateStore,
   deleteStore,
 } = require("./controller/store.ctrl");
-const { login, addUser, getUser } = require("./controller/user.ctrl");
+const { login, addUser, getUser, updateUser } = require("./controller/user.ctrl");
 
 // CRUD User
 router.post("/login", login);
 router.post("/addUser", addUser);
+router.put("/updateUser", updateUser);
 router.get("/getUser", getUser);
 
 // CRUD Product Category
@@ -40,6 +42,7 @@ router.post("/addProductCategory", addProductCategory);
 router.post("/getProductCategory", getProductCategory);
 router.put("/updateProductCategory", updateProductCategory);
 router.get("/deleteProductCategory/:productCategoryID", deleteProductCategory);
+router.get("/getProductByCategory/:productCategoryID", getProductByCategory);
 
 // CRUD Product
 router.post("/addProduct", addProduct);
