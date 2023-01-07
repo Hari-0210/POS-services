@@ -135,12 +135,12 @@ module.exports.getProductByCategory = async (req, res) => {
       const resp = await query(
         getProductByCategoryQuery(req.params.productCategoryID)
       );
-      const rows = mysqlSingleResponseHandler(resp);
+      const rows = mysqlResponseHandler(resp);
       responseHandler.successResponse(
         res,
-        {
-          ...rows,
-        },
+
+        [...rows],
+
         "Successfully Product By Category"
       );
     } catch (err) {

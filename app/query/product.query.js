@@ -5,11 +5,11 @@ module.exports = {
     `Select productCategory.*, store.storeName from productCategory 
     left join store on store.storeID = productCategory.storeID ${
       storeID !== 0 && searchText
-        ? `where (storeID = ${storeID}) and (productCategoryName LIKE '%${searchText}%')`
+        ? `where (productCategory.storeID = ${storeID}) and (productCategory.productCategoryName LIKE '%${searchText}%')`
         : searchText
-        ? `where (productCategoryName LIKE '%${searchText}%')`
+        ? `where (productCategory.productCategoryName LIKE '%${searchText}%')`
         : storeID !== 0
-        ? `where (storeID = ${storeID})`
+        ? `where (productCategory.storeID = ${storeID})`
         : ""
     }ORDER BY createdDate DESC`,
   updateProductCategoryQuery: (productCategoryName, productCategoryID) =>
@@ -32,5 +32,7 @@ module.exports = {
     } ORDER BY createdDate DESC`,
   deleteProductQuery: (productID) =>
     `Delete from product where productID = ${productID}`,
-    getProductByCategoryQuery: (productCategoryID) => `Select * from product where productCategory = ${productCategoryID}`
+  getProductByCategoryQuery: (productCategoryID) => `Select product.*,store.* from product 
+  left join store on store.storeID = product.storeID
+   where productCategory = ${productCategoryID}`
 };

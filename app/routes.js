@@ -42,6 +42,7 @@ router.post("/addProductCategory", addProductCategory);
 router.post("/getProductCategory", getProductCategory);
 router.put("/updateProductCategory", updateProductCategory);
 router.get("/deleteProductCategory/:productCategoryID", deleteProductCategory);
+
 router.get("/getProductByCategory/:productCategoryID", getProductByCategory);
 
 // CRUD Product
