@@ -5,7 +5,9 @@ const {
   updateBrand,
   deleteBrand,
 } = require("./controller/brand.ctrl");
+const { addCompanyDetails, getCompanyDetails, updatePassword } = require("./controller/companyDetails.ctrl");
 const { getCustomer, addCustomer } = require("./controller/cust.ctrl");
+const { addDummySales, getDummySales, dummyDeleteSales } = require("./controller/dSales.ctrl");
 const {
   addProductCategory,
   getProductCategory,
@@ -70,5 +72,19 @@ router.post("/addSales", addSales);
 router.get("/getSales", getSales);
 router.put("/updateSales", updateSales);
 router.get("/deleteSales/:salesMasterID", deleteSales);
+
+
+router.post("/addDummySales", addDummySales);
+router.get("/getDummySales", getDummySales);
+router.get("/dummyDeleteSales/:dummySalesMasterID", dummyDeleteSales);
+
+router.post("/addCompanyDetails", addCompanyDetails);
+router.get("/getCompanyDetails", getCompanyDetails);
+router.post("/updatePassword", updatePassword);
+
+
+
+
+
 
 module.exports = router;
