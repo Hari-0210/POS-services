@@ -86,7 +86,7 @@ module.exports = () => {
   });
   // app.use(network)
   app.use(isAuthenticated);
-  app.use(`/.netlify/functions/api${endpoint}`, routes);
+  app.use(endpoint, routes);
 
   return app;
 };
