@@ -10,7 +10,7 @@ module.exports.addUserSP = async (values) => {
         values.password,
         values.roleID,
         values.storeID,
-        values.pass,
+        values.pass
       ],
       function (err, result) {
         if (err) {

@@ -5910,3 +5910,343 @@
   ],
   timestamp: '2023-01-08 08:51:49'
 }
+{
+  error: Error: Cannot find module 'joi'
+  Require stack:
+  - C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js
+  - C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js
+  - C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js
+  - C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js:6:13)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'joi'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js\n' +
+    "Error: Cannot find module 'joi'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:6:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module 'joi'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:6:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Tue Jan 17 2023 04:10:54 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 12976,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41476096,
+      heapTotal: 17522688,
+      heapUsed: 12451960,
+      external: 2071224,
+      arrayBuffers: 319188
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 402997 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2023-01-17 04:10:54'
+}
+{
+  error: Error: Cannot find module 'joi'
+  Require stack:
+  - C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js
+  - C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js
+  - C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js
+  - C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js
+      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+      at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js:6:13)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'joi'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js\n' +
+    "Error: Cannot find module 'joi'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:6:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  stack: "Error: Cannot find module 'joi'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js\n' +
+    '- C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js\n' +
+    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:778:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js:6:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)',
+  exception: true,
+  date: 'Tue Jan 17 2023 04:11:10 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 15312,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41295872,
+      heapTotal: 17784832,
+      heapUsed: 12450032,
+      external: 2071224,
+      arrayBuffers: 319188
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 403013 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 933,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 778,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2023-01-17 04:11:10'
+}
