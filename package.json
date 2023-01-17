@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "doc": "apidoc -i apidoc/ -o docs/",
-    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda --openssl-legacy-provider build app"
+    "doc": "apidoc -i apidoc/ -o docs/"
   },
   "keywords": [],
   "author": "",
