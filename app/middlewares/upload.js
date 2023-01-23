@@ -11,7 +11,7 @@ var storage = multer.diskStorage({
     destination: (req, file, cb) => {
         console.log(__basedir)
         console.log("hi1");
-        cb(null, __basedir + "/resources/static/assets/uploads/");
+        cb(null,  "/resources/static/assets/uploads/");
     },
     filename: (req, file, cb) => {
         console.log(file.originalname);
