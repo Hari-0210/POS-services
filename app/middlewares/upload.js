@@ -9,9 +9,9 @@ const imageFilter = (req, file, cb) => {
 
 var storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        console.log(__basedir)
+        console.log(require.main?.path)
         console.log("hi1");
-        cb(null, "./up");
+        cb(null, require.main?.path + "/resources/static/assets/uploads/");
     },
     filename: (req, file, cb) => {
         console.log(file.originalname);
