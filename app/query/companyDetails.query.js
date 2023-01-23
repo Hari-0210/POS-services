@@ -1,8 +1,8 @@
 module.exports = {
   addCompanyDetailsQuery: (values, storeID) =>
     values.isFirst
-      ? `Insert into companyDetails (companyName,address,state,mobileNumber,email,gst,bankName,accHolderName,accNumber,accType,ifscCode,branch,storeID) values 
-      ('${values.companyName}','${values.address}','${values.state}','${values.mobileNumber}','${values.email}','${values.gst}','${values.bankName}','${values.accHolderName}','${values.accNumber}','${values.accType}','${values.ifscCode}','${values.branch}',${storeID})`
+      ? `Insert into companyDetails (companyName,address,state,mobileNumber,email,gst,bankName,accHolderName,accNumber,accType,ifscCode,branch,storeID,imagePath) values 
+      ('${values.companyName}','${values.address}','${values.state}','${values.mobileNumber}','${values.email}','${values.gst}','${values.bankName}','${values.accHolderName}','${values.accNumber}','${values.accType}','${values.ifscCode}','${values.branch}',${storeID}, '${values.imagePath}')`
       : `UPDATE companyDetails
        SET companyName = '${values.companyName}',
         address = '${values.address}',
@@ -15,7 +15,8 @@ module.exports = {
         accNumber = '${values.accNumber}',
         accType = '${values.accType}',
         ifscCode = '${values.ifscCode}',
-        branch = '${values.branch}'
+        branch = '${values.branch}',
+        imagePath = "${values.imagePath}"
        WHERE storeID = ${storeID}`,
   getCompanyDetailsQuery: (storeID) =>
     `select * from companyDetails where storeID = ${storeID}`,
