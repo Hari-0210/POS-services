@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   error: Error: Cannot find module 'joi'
   Require stack:
   - C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\brand.ctrl.js
@@ -66,6 +67,59 @@
   date: 'Tue Jan 17 2023 04:05:59 GMT+0530 (India Standard Time)',
   process: {
     pid: 20512,
+=======
+  error: C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\middlewares\upload.js:3
+  \
+  ^
+  
+  SyntaxError: Invalid or unexpected token
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+      at Module._compile (node:internal/modules/cjs/loader:1069:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:36:20)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14),
+  level: 'error',
+  message: 'uncaughtException: Invalid or unexpected token\n' +
+    'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:3\n' +
+    '\\\n' +
+    '^\n' +
+    '\n' +
+    'SyntaxError: Invalid or unexpected token\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1033:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1069:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)',
+  stack: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:3\n' +
+    '\\\n' +
+    '^\n' +
+    '\n' +
+    'SyntaxError: Invalid or unexpected token\n' +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1033:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1069:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)',
+  exception: true,
+  date: 'Mon Jan 23 2023 00:08:40 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 9200,
+>>>>>>> 444fe85d83f47e5453d4d606183dcc4d023d9da6
     uid: null,
     gid: null,
     cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
@@ -76,6 +130,7 @@
       'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
     ],
     memoryUsage: {
+<<<<<<< HEAD
       rss: 41332736,
       heapTotal: 18046976,
       heapUsed: 12645456,
@@ -91,6 +146,31 @@
       function: 'Module._resolveFilename',
       line: 933,
       method: '_resolveFilename',
+=======
+      rss: 51634176,
+      heapTotal: 32043008,
+      heapUsed: 18434648,
+      external: 3661155,
+      arrayBuffers: 387946
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 347708 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1033,
+      method: null,
+>>>>>>> 444fe85d83f47e5453d4d606183dcc4d023d9da6
       native: false
     },
     {
@@ -288,10 +368,17 @@
       native: false
     },
     {
+<<<<<<< HEAD
       column: 13,
       file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\brand.ctrl.js',
       function: null,
       line: 6,
+=======
+      column: 20,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 36,
+>>>>>>> 444fe85d83f47e5453d4d606183dcc4d023d9da6
       method: null,
       native: false
     },
@@ -302,6 +389,87 @@
       line: 1105,
       method: '_compile',
       native: false
+<<<<<<< HEAD
+=======
+    }
+  ],
+  timestamp: '2023-01-23 00:08:40'
+}
+{
+  error: ReferenceError: __basedir is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\middlewares\upload.js:2:13)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:36:20)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: __basedir is not defined\n' +
+    'ReferenceError: __basedir is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:2:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: __basedir is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:2:13)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Mon Jan 23 2023 00:08:41 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 15716,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 52457472,
+      heapTotal: 31780864,
+      heapUsed: 19970728,
+      external: 3746294,
+      arrayBuffers: 523244
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 347709 },
+  trace: [
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+>>>>>>> 444fe85d83f47e5453d4d606183dcc4d023d9da6
     },
     {
       column: 10,
@@ -334,6 +502,7 @@
       line: 1005,
       method: 'require',
       native: false
+<<<<<<< HEAD
     }
   ],
   timestamp: '2023-01-17 04:12:37'
@@ -390,6 +559,84 @@
   date: 'Tue Jan 17 2023 07:19:44 GMT+0530 (India Standard Time)',
   process: {
     pid: 10828,
+=======
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 36,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2023-01-23 00:08:41'
+}
+{
+  error: ReferenceError: imageStorage is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\middlewares\upload.js:4:14)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:36:20)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: imageStorage is not defined\n' +
+    'ReferenceError: imageStorage is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: imageStorage is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Mon Jan 23 2023 00:14:03 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 24996,
+>>>>>>> 444fe85d83f47e5453d4d606183dcc4d023d9da6
     uid: null,
     gid: null,
     cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
@@ -400,6 +647,7 @@
       'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
     ],
     memoryUsage: {
+<<<<<<< HEAD
       rss: 52998144,
       heapTotal: 32043008,
       heapUsed: 19541752,
@@ -439,10 +687,68 @@
       function: 'Protocol.handshake',
       line: 51,
       method: 'handshake',
+=======
+      rss: 52236288,
+      heapTotal: 32043008,
+      heapUsed: 19104448,
+      external: 3746294,
+      arrayBuffers: 430778
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 348031 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+>>>>>>> 444fe85d83f47e5453d4d606183dcc4d023d9da6
       native: false
     },
     {
       column: 18,
+<<<<<<< HEAD
       file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
       function: 'PoolConnection.connect',
       line: 116,
@@ -470,10 +776,16 @@
       file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js',
       function: null,
       line: 18,
+=======
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+>>>>>>> 444fe85d83f47e5453d4d606183dcc4d023d9da6
       method: null,
       native: false
     },
     {
+<<<<<<< HEAD
       column: 28,
       file: 'node:events',
       function: 'Object.onceWrapper',
@@ -486,25 +798,900 @@
       file: 'node:events',
       function: 'Server.emit',
       line: 527,
+=======
+      column: 20,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 36,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2023-01-23 00:14:03'
+}
+{
+  error: ReferenceError: imageStorage is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\middlewares\upload.js:4:14)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:36:20)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: imageStorage is not defined\n' +
+    'ReferenceError: imageStorage is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: imageStorage is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Mon Jan 23 2023 00:14:23 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 15500,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 52215808,
+      heapTotal: 32043008,
+      heapUsed: 19645712,
+      external: 3746294,
+      arrayBuffers: 515929
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 348052 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 36,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2023-01-23 00:14:23'
+}
+{
+  error: ReferenceError: imageStorage is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\middlewares\upload.js:4:14)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:36:20)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: imageStorage is not defined\n' +
+    'ReferenceError: imageStorage is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: imageStorage is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:4:14)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Mon Jan 23 2023 00:14:58 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 16276,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 51183616,
+      heapTotal: 31780864,
+      heapUsed: 19983080,
+      external: 3746294,
+      arrayBuffers: 523244
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 348086 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 36,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2023-01-23 00:14:58'
+}
+{
+  error: ReferenceError: uploadFile is not defined
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\middlewares\upload.js:29:18)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:36:20)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10),
+  level: 'error',
+  message: 'uncaughtException: uploadFile is not defined\n' +
+    'ReferenceError: uploadFile is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:29:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  stack: 'ReferenceError: uploadFile is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:29:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)',
+  exception: true,
+  date: 'Mon Jan 23 2023 00:15:28 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 12400,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 51712000,
+      heapTotal: 32043008,
+      heapUsed: 19897008,
+      external: 3746294,
+      arrayBuffers: 523244
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 348116 },
+  trace: [
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 36,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2023-01-23 00:15:28'
+}
+{
+  error: Error: Route.post() requires a callback function but got a [object Object]
+      at Route.<computed> [as post] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:211:15)
+      at Function.proto.<computed> [as post] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\index.js:521:19)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:89:8)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16),
+  level: 'error',
+  message: 'uncaughtException: Route.post() requires a callback function but got a [object Object]\n' +
+    'Error: Route.post() requires a callback function but got a [object Object]\n' +
+    '    at Route.<computed> [as post] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:211:15)\n' +
+    '    at Function.proto.<computed> [as post] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:89:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)',
+  stack: 'Error: Route.post() requires a callback function but got a [object Object]\n' +
+    '    at Route.<computed> [as post] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:211:15)\n' +
+    '    at Function.proto.<computed> [as post] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:89:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)',
+  exception: true,
+  date: 'Mon Jan 23 2023 00:17:10 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 7732,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 51490816,
+      heapTotal: 31780864,
+      heapUsed: 20358368,
+      external: 3746294,
+      arrayBuffers: 523244
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 348218 },
+  trace: [
+    {
+      column: 15,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.<computed> [as post]',
+      line: 211,
+      method: '<computed> [as post]',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js',
+      function: 'Function.proto.<computed> [as post]',
+      line: 521,
+      method: '<computed> [as post]',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 89,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-01-23 00:17:10'
+}
+{
+  error: Error: Route.post() requires a callback function but got a [object Object]
+      at Route.<computed> [as post] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:211:15)
+      at Function.proto.<computed> [as post] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\index.js:521:19)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:89:8)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\express\index.js:9:16),
+  level: 'error',
+  message: 'uncaughtException: Route.post() requires a callback function but got a [object Object]\n' +
+    'Error: Route.post() requires a callback function but got a [object Object]\n' +
+    '    at Route.<computed> [as post] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:211:15)\n' +
+    '    at Function.proto.<computed> [as post] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:89:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)',
+  stack: 'Error: Route.post() requires a callback function but got a [object Object]\n' +
+    '    at Route.<computed> [as post] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:211:15)\n' +
+    '    at Function.proto.<computed> [as post] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:521:19)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:89:8)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js:9:16)',
+  exception: true,
+  date: 'Mon Jan 23 2023 00:23:18 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 13060,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 51658752,
+      heapTotal: 32043008,
+      heapUsed: 19619704,
+      external: 3746294,
+      arrayBuffers: 481277
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 348587 },
+  trace: [
+    {
+      column: 15,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.<computed> [as post]',
+      line: 211,
+      method: '<computed> [as post]',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js',
+      function: 'Function.proto.<computed> [as post]',
+      line: 521,
+      method: '<computed> [as post]',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 89,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\express\\index.js',
+      function: null,
+      line: 9,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-01-23 00:23:19'
+}
+{
+  error: ReferenceError: er is not defined
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\upload.ctrl.js:32:14
+      at done (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\multer\lib\make-middleware.js:45:7)
+      at indicateDone (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\multer\lib\make-middleware.js:49:68)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\multer\lib\make-middleware.js:155:11
+      at WriteStream.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\multer\storage\disk.js:43:9)
+      at WriteStream.emit (node:events:539:35)
+      at finish (node:internal/streams/writable:754:10)
+      at finishMaybe (node:internal/streams/writable:739:9)
+      at afterWrite (node:internal/streams/writable:504:3)
+      at onwrite (node:internal/streams/writable:477:7),
+  level: 'error',
+  message: 'uncaughtException: er is not defined\n' +
+    'ReferenceError: er is not defined\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\upload.ctrl.js:32:14\n' +
+    '    at done (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\multer\\lib\\make-middleware.js:45:7)\n' +
+    '    at indicateDone (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\multer\\lib\\make-middleware.js:49:68)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\multer\\lib\\make-middleware.js:155:11\n' +
+    '    at WriteStream.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\multer\\storage\\disk.js:43:9)\n' +
+    '    at WriteStream.emit (node:events:539:35)\n' +
+    '    at finish (node:internal/streams/writable:754:10)\n' +
+    '    at finishMaybe (node:internal/streams/writable:739:9)\n' +
+    '    at afterWrite (node:internal/streams/writable:504:3)\n' +
+    '    at onwrite (node:internal/streams/writable:477:7)',
+  stack: 'ReferenceError: er is not defined\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\upload.ctrl.js:32:14\n' +
+    '    at done (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\multer\\lib\\make-middleware.js:45:7)\n' +
+    '    at indicateDone (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\multer\\lib\\make-middleware.js:49:68)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\multer\\lib\\make-middleware.js:155:11\n' +
+    '    at WriteStream.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\multer\\storage\\disk.js:43:9)\n' +
+    '    at WriteStream.emit (node:events:539:35)\n' +
+    '    at finish (node:internal/streams/writable:754:10)\n' +
+    '    at finishMaybe (node:internal/streams/writable:739:9)\n' +
+    '    at afterWrite (node:internal/streams/writable:504:3)\n' +
+    '    at onwrite (node:internal/streams/writable:477:7)',
+  exception: true,
+  date: 'Mon Jan 23 2023 07:17:33 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 12372,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 40656896,
+      heapTotal: 17625088,
+      heapUsed: 15225736,
+      external: 986066,
+      arrayBuffers: 52599
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 373441 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\upload.ctrl.js',
+      function: null,
+      line: 32,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\multer\\lib\\make-middleware.js',
+      function: 'done',
+      line: 45,
+      method: null,
+      native: false
+    },
+    {
+      column: 68,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\multer\\lib\\make-middleware.js',
+      function: 'indicateDone',
+      line: 49,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\multer\\lib\\make-middleware.js',
+      function: null,
+      line: 155,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\multer\\storage\\disk.js',
+      function: null,
+      line: 43,
+      method: null,
+      native: false
+    },
+    {
+      column: 35,
+      file: 'node:events',
+      function: 'WriteStream.emit',
+      line: 539,
+>>>>>>> 444fe85d83f47e5453d4d606183dcc4d023d9da6
       method: 'emit',
       native: false
     },
     {
       column: 10,
+<<<<<<< HEAD
       file: 'node:net',
       function: 'emitListeningNT',
       line: 1406,
+=======
+      file: 'node:internal/streams/writable',
+      function: 'finish',
+      line: 754,
+>>>>>>> 444fe85d83f47e5453d4d606183dcc4d023d9da6
       method: null,
       native: false
     },
     {
+<<<<<<< HEAD
       column: 21,
       file: 'node:internal/process/task_queues',
       function: 'processTicksAndRejections',
       line: 82,
+=======
+      column: 9,
+      file: 'node:internal/streams/writable',
+      function: 'finishMaybe',
+      line: 739,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'node:internal/streams/writable',
+      function: 'afterWrite',
+      line: 504,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/streams/writable',
+      function: 'onwrite',
+      line: 477,
+>>>>>>> 444fe85d83f47e5453d4d606183dcc4d023d9da6
       method: null,
       native: false
     }
   ],
+<<<<<<< HEAD
   timestamp: '2023-01-17 07:19:44'
+=======
+  timestamp: '2023-01-23 07:17:33'
+>>>>>>> 444fe85d83f47e5453d4d606183dcc4d023d9da6
 }

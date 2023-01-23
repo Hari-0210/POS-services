@@ -31,7 +31,9 @@ const {
   updateStore,
   deleteStore,
 } = require("./controller/store.ctrl");
+const { uploadLogo } = require("./controller/upload.ctrl");
 const { login, addUser, getUser, updateUser } = require("./controller/user.ctrl");
+const uploadFile = require("./middlewares/upload");
 
 // CRUD User
 router.post("/login", login);
@@ -84,6 +86,7 @@ router.post("/updatePassword", updatePassword);
 
 
 
+router.post('/uploadAvatar', uploadFile.single("file"), uploadLogo)
 
 
 

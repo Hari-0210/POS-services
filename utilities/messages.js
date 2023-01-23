@@ -12,4 +12,6 @@ exports.responseMessages = {
   addProduct: "Product Added Successfully",
   updateProduct: "Product Updated Successfully",
   getCustomer: "Get Customer List",
+  getBrandSuccessfully: "Get All Brand List",
+  fileUpload: "File Uploaded Successfully"
 };

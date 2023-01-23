@@ -30,6 +30,7 @@ module.exports.addCompanyDetails = async (req, res) => {
       branch: Joi.string().optional().allow(""),
       //   orderMinimumAmount: Joi.string().optional().allow(""),
       isFirst: Joi.boolean().required(),
+      imagePath: Joi.string().optional().allow(""),
     });
     try {
       await companySchema.validateAsync(req.body);
