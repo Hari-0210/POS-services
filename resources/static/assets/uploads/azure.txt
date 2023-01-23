@@ -1,0 +1,92 @@
+define cloud computing
+	this is ability to rent cloud computing resources on demand
+	only pay for what you use
+	
+Shared responsibility model
+	This is the concept that u have certain responsibilities as a customer of cloud services and cloud 
+	
+	when service run on cloud
+		not responsible for building security, physical network security and all
+		becaus it running in cloud
+		
+		
+	SaaS software as a service
+		highest level of abstraction with cloud computing
+		dont have access to os and  dont have access to application
+		saas is renting access to  a software and u dont have code and u dont have control version
+		if they going to upgrade feature or add some features and that is going to happen over periodwhere you are in not in control
+		this is highest level of abstraction
+		higher the abstraction kevel, lower your control
+		
+		
+Public cloud
+	it is computing service offered by third party provideers over the public internet
+	making them available to anyone to purchase  or use them
+	Azure owns the  hardware on their network and infrastructure
+	
+Private cloud
+	it is computing service offered either over internet or a private internal  network and 
+	only to select users intead of general public
+	only available to selcted users
+	it doesnt need to be fully on cloud
+	looks and acts like a cloud 
+	it is privately owned thing
+	itcalled azure stack
+	
+Hybrid cloud
+	its a combination of public and private
+	
+	
+	
+	
+High availability
+	Expressed as percentage it is a ability of a system to respond to users
+	system is operational
+	
+	
+Scalability
+	The ability of  a system  to handle growth of users or work
+	Scaling is ability to add capacity  to your application
+		You do this through elasticity to eliminate this
+		
+Elasticity
+	The ability of a system to automatically grow and shrink based on application demand
+	the servers to acheive 100% after run and to add additional servers automatically and its called elasticity
+	
+Dual benefits of reliability and predictablity
+
+Microsoft publishes Service Level Agreement SLA for their services
+
+Security is a fulltime job
+
+Identity is no 1 attack vector, identity protection is a key
+
+Another attack vector called Distributed Daniel of Service DDoS
+
+Data governance 
+
+Cloud models
+	Iaas
+	Paas
+	SaaS
+	Serverless
+	
+IaaS
+	Is a tye of cloud computing service that offers essential compute, storage and networking resources on demand pay as you go basis	
+	This is the lowest level of service in the cloud
+	VM, networking, load balancers, firewall
+	
+PaaS	(Next Level)
+	is a complete develepoment and deployement environment in the cloud
+	also called cloud native 
+	like iaas , PaaS includes infrastructure- servers, storage and networking
+	but also middleware, developement tools, business intelligence services, dbms 
+	paas is designated to support complete web application lifecycle
+	
+SaaS
+	allows users to connect to and use cloud based appsover the internet
+	common examples are email,calendering and office tools
+	
+Serverless
+	There are still servers
+	you just dont ever have to deal with them
