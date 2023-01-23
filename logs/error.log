@@ -1695,3 +1695,157 @@
   timestamp: '2023-01-23 07:17:33'
 >>>>>>> 444fe85d83f47e5453d4d606183dcc4d023d9da6
 }
+{
+  error: C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\middlewares\upload.js:14
+  <<<<<<< HEAD
+  ^^
+  
+  SyntaxError: Unexpected token '<<'
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+      at Module._compile (node:internal/modules/cjs/loader:1069:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\routes.js:36:20)
+      at Module._compile (node:internal/modules/cjs/loader:1105:14),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '<<'\n" +
+    'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:14\n' +
+    '<<<<<<< HEAD\n' +
+    '^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '<<'\n" +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1033:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1069:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)',
+  stack: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\middlewares\\upload.js:14\n' +
+    '<<<<<<< HEAD\n' +
+    '^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '<<'\n" +
+    '    at Object.compileFunction (node:vm:352:18)\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1033:15)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1069:27)\n' +
+    '    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:981:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:822:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1005:19)\n' +
+    '    at require (node:internal/modules/cjs/helpers:102:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js:36:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1105:14)',
+  exception: true,
+  date: 'Mon Jan 23 2023 09:16:31 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 2208,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 49827840,
+      heapTotal: 32043008,
+      heapUsed: 19092008,
+      external: 3661155,
+      arrayBuffers: 438105
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 380579 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:vm',
+      function: 'Object.compileFunction',
+      line: 352,
+      method: 'compileFunction',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1033,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1069,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1159,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 981,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 822,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1005,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/helpers',
+      function: 'require',
+      line: 102,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\routes.js',
+      function: null,
+      line: 36,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1105,
+      method: '_compile',
+      native: false
+    }
+  ],
+  timestamp: '2023-01-23 09:16:31'
+}
