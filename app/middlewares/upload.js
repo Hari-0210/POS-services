@@ -1,4 +1,5 @@
 const multer = require("multer");
+const path = require("path");
 const imageFilter = (req, file, cb) => {
     if (!file.originalname.match(/\.(png|jpg|jpeg|PNG|JPG|JPEG)$/)) {
         // upload only png and jpg format
@@ -11,11 +12,11 @@ var storage = multer.diskStorage({
     destination: (req, file, cb) => {
         console.log(require.main?.path)
         console.log("hi1");
-        cb(null, require.main?.path + "/resources/static/assets/uploads/");
+        cb(null, path.join(__dirname,"/resources/static/assets/uploads/"));
     },
     filename: (req, file, cb) => {
         console.log(file.originalname);
-        cb(null, `${Date.now()}-bezkoder-${file.originalname}`);
+        cb(null, Date.now() + path.extname(file.originalname));
     },
 });
 var uploadFile = multer({ storage: storage,fileFilter: imageFilter });
