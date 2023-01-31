@@ -17,7 +17,8 @@ const { addSalesSP } = require("../services/sales.services");
 module.exports.addSales = async (req, res) => {
   try {
     const productsSchema = Joi.object().keys({
-      productID: Joi.number().required(),
+      productName: Joi.string().required(),
+      productCost: Joi.string().required(),
       productQty: Joi.number().required(),
     });
     const SalesSchema = Joi.object({

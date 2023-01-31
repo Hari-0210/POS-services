@@ -6,7 +6,7 @@ const {
   deleteBrand,
 } = require("./controller/brand.ctrl");
 const { addCompanyDetails, getCompanyDetails, updatePassword } = require("./controller/companyDetails.ctrl");
-const { getCustomer, addCustomer } = require("./controller/cust.ctrl");
+const { getCustomer, addCustomer, deleteCustomer } = require("./controller/cust.ctrl");
 const { addDummySales, getDummySales, dummyDeleteSales } = require("./controller/dSales.ctrl");
 const {
   addProductCategory,
@@ -69,6 +69,7 @@ router.get("/deleteStore/:storeID", deleteStore);
 
 router.get("/getCustomer", getCustomer);
 router.post("/addCustomer", addCustomer);
+router.get("/deleteCustomer/:customerID", deleteCustomer);
 
 router.post("/addSales", addSales);
 router.get("/getSales", getSales);
