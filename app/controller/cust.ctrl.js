@@ -6,7 +6,7 @@ const {
   mysqlSingleResponseHandler,
   mysqlResponseHandler,
 } = require("../../utilities/utility");
-const { getCustomer } = require("../query/cust.query");
+const { getCustomer, deleteCustomerQuery } = require("../query/cust.query");
 const { addCustomerSP } = require("../services/cust.services");
 module.exports.getCustomer = async (req, res) => {
   try {
@@ -37,6 +37,30 @@ module.exports.addCustomer = async (req, res) => {
           ...rows,
         },
         "Successfully Added Customer"
+      );
+    } catch (err) {
+      responseHandler.errorResponse(res, err.message, err.message);
+    }
+  } catch (err) {
+    responseHandler.errorResponse(res, err.message, commonErrorMessage);
+  }
+};
+
+module.exports.deleteCustomer = async (req, res) => {
+  try {
+    const customerScheme = Joi.object({
+      customerID: Joi.number().required(),
+    });
+    try {
+      await customerScheme.validateAsync(req.params);
+      const resp = await query(deleteCustomerQuery(req.params.customerID));
+      const rows = mysqlSingleResponseHandler(resp);
+      responseHandler.successResponse(
+        res,
+        {
+          ...rows,
+        },
+        "Successfully Deleted  Customer"
       );
     } catch (err) {
       responseHandler.errorResponse(res, err.message, err.message);

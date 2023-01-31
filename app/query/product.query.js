@@ -29,7 +29,7 @@ module.exports = {
         : storeID !== 0
         ? `where (product.storeID = ${storeID})`
         : ""
-    } ORDER BY createdDate DESC`,
+    } `,
   deleteProductQuery: (productID) =>
     `Delete from product where productID = ${productID}`,
   getProductByCategoryQuery: (productCategoryID) => `Select product.*,store.* from product 

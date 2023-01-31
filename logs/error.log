@@ -1849,3 +1849,1780 @@
   ],
   timestamp: '2023-01-23 09:16:31'
 }
+{
+  error: Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at module.exports.db (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\config\mysqldb.js:5:7)
+      at Server.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js:18:9)
+      at Object.onceWrapper (node:events:641:28)
+      at Server.emit (node:events:527:28)
+      at emitListeningNT (node:net:1406:10)
+      at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'bom1plzcpnl493931.prod.bom1.secureserver.net',
+    fatal: true
+  },
+  level: 'error',
+  message: 'uncaughtException: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    'Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    '    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  stack: 'Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    '    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  exception: true,
+  date: 'Mon Jan 30 2023 15:31:23 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 18520,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 53436416,
+      heapTotal: 32043008,
+      heapUsed: 20531944,
+      external: 3781176,
+      arrayBuffers: 523244
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 586812 },
+  trace: [
+    {
+      column: 26,
+      file: 'node:dns',
+      function: 'GetAddrInfoReqWrap.onlookup [as oncomplete]',
+      line: 71,
+      method: 'onlookup [as oncomplete]',
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js',
+      function: 'module.exports.db',
+      line: 5,
+      method: 'db',
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Object.onceWrapper',
+      line: 641,
+      method: 'onceWrapper',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Server.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:net',
+      function: 'emitListeningNT',
+      line: 1406,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 82,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-01-30 15:31:23'
+}
+{
+  error: Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at module.exports.db (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\config\mysqldb.js:5:7)
+      at Server.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js:18:9)
+      at Object.onceWrapper (node:events:641:28)
+      at Server.emit (node:events:527:28)
+      at emitListeningNT (node:net:1406:10)
+      at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'bom1plzcpnl493931.prod.bom1.secureserver.net',
+    fatal: true
+  },
+  level: 'error',
+  message: 'uncaughtException: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    'Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    '    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  stack: 'Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    '    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  exception: true,
+  date: 'Mon Jan 30 2023 15:31:31 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 984,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 54018048,
+      heapTotal: 32043008,
+      heapUsed: 15185368,
+      external: 3781176,
+      arrayBuffers: 64841
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 586821 },
+  trace: [
+    {
+      column: 26,
+      file: 'node:dns',
+      function: 'GetAddrInfoReqWrap.onlookup [as oncomplete]',
+      line: 71,
+      method: 'onlookup [as oncomplete]',
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js',
+      function: 'module.exports.db',
+      line: 5,
+      method: 'db',
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Object.onceWrapper',
+      line: 641,
+      method: 'onceWrapper',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Server.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:net',
+      function: 'emitListeningNT',
+      line: 1406,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 82,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-01-30 15:31:31'
+}
+{
+  error: Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at module.exports.db (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\config\mysqldb.js:5:7)
+      at Server.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js:18:9)
+      at Object.onceWrapper (node:events:641:28)
+      at Server.emit (node:events:527:28)
+      at emitListeningNT (node:net:1406:10)
+      at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'bom1plzcpnl493931.prod.bom1.secureserver.net',
+    fatal: true
+  },
+  level: 'error',
+  message: 'uncaughtException: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    'Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    '    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  stack: 'Error: getaddrinfo ENOTFOUND bom1plzcpnl493931.prod.bom1.secureserver.net\n' +
+    '    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  exception: true,
+  date: 'Mon Jan 30 2023 15:32:01 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 24060,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 53739520,
+      heapTotal: 31780864,
+      heapUsed: 15111136,
+      external: 3781176,
+      arrayBuffers: 64841
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 586851 },
+  trace: [
+    {
+      column: 26,
+      file: 'node:dns',
+      function: 'GetAddrInfoReqWrap.onlookup [as oncomplete]',
+      line: 71,
+      method: 'onlookup [as oncomplete]',
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js',
+      function: 'module.exports.db',
+      line: 5,
+      method: 'db',
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Object.onceWrapper',
+      line: 641,
+      method: 'onceWrapper',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Server.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:net',
+      function: 'emitListeningNT',
+      line: 1406,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 82,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-01-30 15:32:01'
+}
+{
+  error: Error: Handshake inactivity timeout
+      at Handshake.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+      at Handshake.emit (node:events:527:28)
+      at Handshake._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+      at Timer._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Timer.js:32:23)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at module.exports.db (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\config\mysqldb.js:5:7)
+      at Server.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\server.js:18:9)
+      at Object.onceWrapper (node:events:641:28)
+      at Server.emit (node:events:527:28)
+      at emitListeningNT (node:net:1406:10)
+      at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    code: 'PROTOCOL_SEQUENCE_TIMEOUT',
+    fatal: true,
+    timeout: 10000
+  },
+  level: 'error',
+  message: 'uncaughtException: Handshake inactivity timeout\n' +
+    'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  stack: 'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at module.exports.db (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js:5:7)\n' +
+    '    at Server.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js:18:9)\n' +
+    '    at Object.onceWrapper (node:events:641:28)\n' +
+    '    at Server.emit (node:events:527:28)\n' +
+    '    at emitListeningNT (node:net:1406:10)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  exception: true,
+  date: 'Mon Jan 30 2023 15:34:11 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 13624,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 43712512,
+      heapTotal: 17362944,
+      heapUsed: 14351360,
+      external: 982801,
+      arrayBuffers: 49334
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 586981 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Handshake.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Handshake._onTimeout',
+      line: 124,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js',
+      function: 'Timer._onTimeout',
+      line: 32,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/timers',
+      function: 'listOnTimeout',
+      line: 559,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/timers',
+      function: 'processTimers',
+      line: 502,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\config\\mysqldb.js',
+      function: 'module.exports.db',
+      line: 5,
+      method: 'db',
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js',
+      function: null,
+      line: 18,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Object.onceWrapper',
+      line: 641,
+      method: 'onceWrapper',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Server.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:net',
+      function: 'emitListeningNT',
+      line: 1406,
+      method: null,
+      native: false
+    },
+    {
+      column: 21,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 82,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-01-30 15:34:12'
+}
+{
+  error: Error: Handshake inactivity timeout
+      at Handshake.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+      at Handshake.emit (node:events:527:28)
+      at Handshake._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+      at Timer._onTimeout (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Timer.js:32:23)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+      --------------------
+      at Protocol._enqueue (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+      at Protocol.handshake (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+      at PoolConnection.connect (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:116:18)
+      at Pool.getConnection (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:48:16)
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:202:8)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:7:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:12)
+      at module.exports.login (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\user.ctrl.js:25:26)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'PROTOCOL_SEQUENCE_TIMEOUT',
+    fatal: true,
+    timeout: 10000
+  },
+  level: 'error',
+  message: 'uncaughtException: Handshake inactivity timeout\n' +
+    'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:202:8)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:7:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:12)\n' +
+    '    at module.exports.login (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:25:26)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: 'Error: Handshake inactivity timeout\n' +
+    '    at Handshake.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:160:17)\n' +
+    '    at Handshake.emit (node:events:527:28)\n' +
+    '    at Handshake._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:124:8)\n' +
+    '    at Timer._onTimeout (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js:32:23)\n' +
+    '    at listOnTimeout (node:internal/timers:559:17)\n' +
+    '    at processTimers (node:internal/timers:502:7)\n' +
+    '    --------------------\n' +
+    '    at Protocol._enqueue (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n' +
+    '    at Protocol.handshake (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:51:23)\n' +
+    '    at PoolConnection.connect (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:116:18)\n' +
+    '    at Pool.getConnection (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:48:16)\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:202:8)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:7:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:12)\n' +
+    '    at module.exports.login (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js:25:26)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Mon Jan 30 2023 15:35:56 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 15528,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 44109824,
+      heapTotal: 16838656,
+      heapUsed: 15203648,
+      external: 1084412,
+      arrayBuffers: 58066
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 587086 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: null,
+      line: 160,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Handshake.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Handshake._onTimeout',
+      line: 124,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Timer.js',
+      function: 'Timer._onTimeout',
+      line: 32,
+      method: '_onTimeout',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/timers',
+      function: 'listOnTimeout',
+      line: 559,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/timers',
+      function: 'processTimers',
+      line: 502,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 48,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._enqueue',
+      line: 144,
+      method: '_enqueue',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.handshake',
+      line: 51,
+      method: 'handshake',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: 'PoolConnection.connect',
+      line: 116,
+      method: 'connect',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.getConnection',
+      line: 48,
+      method: 'getConnection',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 202,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\user.ctrl.js',
+      function: 'module.exports.login',
+      line: 25,
+      method: 'login',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-01-30 15:35:56'
+}
+{
+  error: Error: ER_BAD_FIELD_ERROR: Unknown column 'productName' in 'field list'
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:7:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:12)
+      at module.exports.addSales (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\sales.ctrl.js:36:26)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlMessage: "Unknown column 'productName' in 'field list'",
+    sqlState: '42S22',
+    index: 2,
+    sql: 'SET @count = FN_SALES_SERIAL();\n' +
+      'Insert into salesMaster (salesMasterID, customerID, totalNoofProducts,subTotal,discount,packingCost,total,storeID) \n' +
+      '        values \n' +
+      "(@count,7, 1,'400',2,100,'492',1);\n" +
+      'Insert into salesProducts \n' +
+      '  (salesMasterID, productName, productQty, productCost) \n' +
+      'values \n' +
+      "  (@count, 'Bijili1', 2,'200');\n"
+  },
+  level: 'error',
+  message: "uncaughtException: ER_BAD_FIELD_ERROR: Unknown column 'productName' in 'field list'\n" +
+    "Error: ER_BAD_FIELD_ERROR: Unknown column 'productName' in 'field list'\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:7:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:12)\n' +
+    '    at module.exports.addSales (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\sales.ctrl.js:36:26)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: "Error: ER_BAD_FIELD_ERROR: Unknown column 'productName' in 'field list'\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:7:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:12)\n' +
+    '    at module.exports.addSales (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\sales.ctrl.js:36:26)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Tue Jan 31 2023 08:34:31 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 29720,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 44519424,
+      heapTotal: 17362944,
+      heapUsed: 15603080,
+      external: 1092857,
+      arrayBuffers: 61809
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 648201 },
+  trace: [
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 26,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\sales.ctrl.js',
+      function: 'module.exports.addSales',
+      line: 36,
+      method: 'addSales',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-01-31 08:34:31'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as salesProducts
+      from salesMaster as sm  
+      left join customer as c on c' at line 1
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:7:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:12)
+      at module.exports.getSales (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\sales.ctrl.js:56:24)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5)
+      at next (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:144:13)
+      at Route.dispatch (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:114:3)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\index.js:284:15 {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as salesProducts\n" +
+      '    from salesMaster as sm  \n' +
+      "    left join customer as c on c' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: "Select sm.*,s.storeName, c.name as customerName,CONVERT_TZ(sm.createdTime,'+00:00','+12:30') createdTime\n" +
+      '  from salesProducts as sp \n' +
+      '  where sp.salesMasterID = sm.salesMasterID) as salesProducts\n' +
+      '    from salesMaster as sm  \n' +
+      '    left join customer as c on c.customerID = sm.customerID\n' +
+      '    left join store as s on s.storeID = sm.storeID where (sm.storeID = 1)\n' +
+      '  '
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as salesProducts\n" +
+    '    from salesMaster as sm  \n' +
+    "    left join customer as c on c' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as salesProducts\n" +
+    '    from salesMaster as sm  \n' +
+    "    left join customer as c on c' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:7:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:12)\n' +
+    '    at module.exports.getSales (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\sales.ctrl.js:56:24)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:284:15',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as salesProducts\n" +
+    '    from salesMaster as sm  \n' +
+    "    left join customer as c on c' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:7:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:12)\n' +
+    '    at module.exports.getSales (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\sales.ctrl.js:56:24)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:284:15',
+  exception: true,
+  date: 'Tue Jan 31 2023 08:36:34 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 17832,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 54685696,
+      heapTotal: 32305152,
+      heapUsed: 21082600,
+      external: 3782993,
+      arrayBuffers: 525061
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 648324 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\sales.ctrl.js',
+      function: 'module.exports.getSales',
+      line: 56,
+      method: 'getSales',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'next',
+      line: 144,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.dispatch',
+      line: 114,
+      method: 'dispatch',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js',
+      function: null,
+      line: 284,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-01-31 08:36:34'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as salesProducts
+      from salesMaster as sm  
+      left join customer as c on c' at line 1
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:7:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:12)
+      at module.exports.getSales (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\sales.ctrl.js:56:24)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5)
+      at next (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:144:13)
+      at Route.dispatch (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\route.js:114:3)
+      at Layer.handle [as handle_request] (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\layer.js:95:5)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\express\lib\router\index.js:284:15 {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as salesProducts\n" +
+      '    from salesMaster as sm  \n' +
+      "    left join customer as c on c' at line 1",
+    sqlState: '42000',
+    index: 0,
+    sql: "Select sm.*,s.storeName, c.name as customerName,CONVERT_TZ(sm.createdTime,'+00:00','+12:30') createdTime\n" +
+      '  from salesProducts as sp \n' +
+      '  where sp.salesMasterID = sm.salesMasterID) as salesProducts\n' +
+      '    from salesMaster as sm  \n' +
+      '    left join customer as c on c.customerID = sm.customerID\n' +
+      '    left join store as s on s.storeID = sm.storeID where (sm.storeID = 1)\n' +
+      '  '
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as salesProducts\n" +
+    '    from salesMaster as sm  \n' +
+    "    left join customer as c on c' at line 1\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as salesProducts\n" +
+    '    from salesMaster as sm  \n' +
+    "    left join customer as c on c' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:7:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:12)\n' +
+    '    at module.exports.getSales (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\sales.ctrl.js:56:24)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:284:15',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as salesProducts\n" +
+    '    from salesMaster as sm  \n' +
+    "    left join customer as c on c' at line 1\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:7:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:12)\n' +
+    '    at module.exports.getSales (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\sales.ctrl.js:56:24)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js:284:15',
+  exception: true,
+  date: 'Tue Jan 31 2023 08:36:50 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 7928,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 54620160,
+      heapTotal: 32305152,
+      heapUsed: 15664432,
+      external: 3782993,
+      arrayBuffers: 233947
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 648339 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/readable',
+      function: 'addChunk',
+      line: 315,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\sales.ctrl.js',
+      function: 'module.exports.getSales',
+      line: 56,
+      method: 'getSales',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'next',
+      line: 144,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.dispatch',
+      line: 114,
+      method: 'dispatch',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 15,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\express\\lib\\router\\index.js',
+      function: null,
+      line: 284,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-01-31 08:36:50'
+}
