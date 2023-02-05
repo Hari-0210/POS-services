@@ -7,7 +7,7 @@ const query = async (QUERY) => {
             con.query(QUERY, function (err, result) {
                 if (err) {
                     rej(err)
-                    console.log(err);
+                    // console.log(err);
                     throw err;
                 }
                 res(result);

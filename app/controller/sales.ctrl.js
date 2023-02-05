@@ -66,10 +66,9 @@ module.exports.getSales = async (req, res) => {
 module.exports.updateSales = async (req, res) => {
   try {
     const productsSchema = Joi.object().keys({
-      productID: Joi.number().required(),
+      productName: Joi.string().required(),
+      productCost: Joi.string().required(),
       productQty: Joi.number().required(),
-      salesMasterID: Joi.number().required(),
-      salesProductID: Joi.number().required(),
     });
     const SalesSchema = Joi.object({
       salesMasterID: Joi.number().required(),

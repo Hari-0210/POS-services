@@ -8,6 +8,7 @@ const {
 const { addCompanyDetails, getCompanyDetails, updatePassword } = require("./controller/companyDetails.ctrl");
 const { getCustomer, addCustomer, deleteCustomer } = require("./controller/cust.ctrl");
 const { addDummySales, getDummySales, dummyDeleteSales } = require("./controller/dSales.ctrl");
+const { addInvoice, getInvoice, deleteInvoice, updateInvoice } = require("./controller/invoice.ctrl");
 const {
   addProductCategory,
   getProductCategory,
@@ -75,6 +76,12 @@ router.post("/addSales", addSales);
 router.get("/getSales", getSales);
 router.put("/updateSales", updateSales);
 router.get("/deleteSales/:salesMasterID", deleteSales);
+
+router.post("/addInvoice", addInvoice);
+router.get("/getInvoice", getInvoice);
+router.put("/updateInvoice", updateInvoice);
+router.get("/deleteInvoice/:invoiceMasterID", deleteInvoice);
+
 
 
 router.post("/addDummySales", addDummySales);

@@ -19,7 +19,7 @@ values
   getSalesQuery: (
     storeID
   ) => ` 
-  Select sm.*,s.storeName, c.name as customerName,CONVERT_TZ(sm.createdTime,'+00:00','+12:30') createdTime,
+  Select sm.*,s.storeName, c.name as customerName,c.mobileNo as customerMobile,c.city as customerCity,CONVERT_TZ(sm.createdTime,'+00:00','+12:30') createdTime,
   (select JSON_ARRAYAGG(JSON_OBJECT('productCost',sp.productCost,'productName', sp.productName, 'productQty', sp.productQty)) 
   from salesProducts as sp 
   where sp.salesMasterID = sm.salesMasterID) as salesProducts
@@ -30,18 +30,20 @@ values
     }
   `,
   updateSalesQuery: (data) =>
-    `Update salesMaster set (customerID =${
+    `Delete from salesProducts where salesProducts.salesMasterID=${data.salesMasterID};
+    Update salesMaster set customerID =${
       data.customerID
     },totalNoofProducts =${data.totalNoofProducts},subTotal ='${
       data.subTotal
     }',discount =${data.discount},packingCost =${data.packingCost},total ='${
       data.total
-    }') where salesMasterID = ${data.salesMasterID};
+    }' where salesMasterID = ${data.salesMasterID};
     ${data.products
       .map((x) => {
-        return `Update  salesProducts set
-      (productID =${productID}, productQty =${productQty}) 
-      where salesMasterID = ${salesMasterID} and salesProductID = ${salesProductID}`;
+        return `Insert into salesProducts 
+        (salesMasterID, productName, productQty, productCost) 
+      values 
+        (${data.salesMasterID}, '${x.productName}', ${x.productQty},'${x.productCost}')`;
       })
       .join(";")};
     `,

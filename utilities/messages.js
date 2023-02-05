@@ -13,5 +13,7 @@ exports.responseMessages = {
   updateProduct: "Product Updated Successfully",
   getCustomer: "Get Customer List",
   getBrandSuccessfully: "Get All Brand List",
-  fileUpload: "File Uploaded Successfully"
+  fileUpload: "File Uploaded Successfully",
+  getSales: "Get All Sales List",
+  getInvoice:"Get All Invoice List"
 };
