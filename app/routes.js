@@ -33,6 +33,7 @@ const {
   deleteStore,
 } = require("./controller/store.ctrl");
 const { uploadLogo } = require("./controller/upload.ctrl");
+const { fileUpload } = require("./controller/uploadFile.ctrl");
 const { login, addUser, getUser, updateUser } = require("./controller/user.ctrl");
 const uploadFile = require("./middlewares/upload");
 
@@ -82,6 +83,7 @@ router.get("/getInvoice", getInvoice);
 router.put("/updateInvoice", updateInvoice);
 router.get("/deleteInvoice/:invoiceMasterID", deleteInvoice);
 
+router.post('/fileUpload', fileUpload)
 
 
 router.post("/addDummySales", addDummySales);
@@ -91,6 +93,8 @@ router.get("/dummyDeleteSales/:dummySalesMasterID", dummyDeleteSales);
 router.post("/addCompanyDetails", addCompanyDetails);
 router.get("/getCompanyDetails", getCompanyDetails);
 router.post("/updatePassword", updatePassword);
+
+
 
 
 

@@ -11,7 +11,7 @@ const Joi = require("joi");
 const moment = require("moment");
 const { query } = require("../../helper/executequery");
 const { responseHandler } = require("../../utilities");
-const { login, getUser, getUserQuery } = require("../query/user.query");
+const { login, getUser, getUserQuery, checkStore } = require("../query/user.query");
 const { addUserSP, updateUserSP } = require("../services/user.services");
 
 module.exports.login = async (req, res) => {
@@ -24,7 +24,17 @@ module.exports.login = async (req, res) => {
       await loginSchema.validateAsync(req.body);
       const resp = await query(login(req.body.userName));
       const rows = mysqlSingleResponseHandler(resp);
-      console.log(rows);
+     console.log(rows);
+      let checkStoreActive = await query(checkStore(rows.storeID));
+      checkStoreActive = mysqlSingleResponseHandler(checkStoreActive)
+      if (checkStoreActive.isActive === 1) {
+        responseHandler.errorResponse(
+          res,
+          responseMessages.storeActive,
+          responseMessages.storeActive
+        );
+        return false;
+      }
       if (!Object.keys(rows).length) {
         responseHandler.errorResponse(
           res,
@@ -34,13 +44,19 @@ module.exports.login = async (req, res) => {
         return false;
       }
       await verifyPassword(req.body.password, rows.password);
+      // console.log(rows);
+      delete rows.jwt
+      let newToken = generateToken(rows)
       responseHandler.successResponse(
         res,
         {
-          token: generateToken(rows),
+          token: newToken,
           ...rows,
         },
         "Successfully Login"
+      );
+      await query(
+        `Update userDetails set jwt ='${newToken}' where userID = ${rows.userID}`
       );
     } catch (err) {
       responseHandler.errorResponse(res, err.message, err.message);
@@ -64,11 +80,11 @@ module.exports.addUser = async (req, res) => {
       req.body.pass =pass;
       req.body.password = await passwordHash(req.body.password);
       req.body.roleID = 2;
-      console.log(req.body);
       const resp = await addUserSP(req.body);
       const user = await query(
         `select * from userDetails where userName = '${req.body.userName}'`
       );
+     
       responseHandler.successResponse(res, user, "Successfully added");
     } catch (err) {
       responseHandler.errorResponse(res, err.message, err.message);

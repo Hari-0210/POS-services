@@ -18,4 +18,10 @@ const env = () => {
 module.exports = {
   ...env(),
   noAuthRequired: ["/api/v1/login", "/api/v1/test"],
+  aws_access_key_id: "AKIAQPHMHKKQGLJ47LED",
+    aws_secret_access_key: "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",
+    spacesEndpoint: 'gobiggguru-uqmr16rdz9ynhe3gcugzmr5j6fhegaps3a-s3alias',
+    filePath: `https://rgca.fra1.digitaloceanspaces.com/`,
+    public_read: 'public-read',
+    bucket: dbConfig.s3Bucket
 };

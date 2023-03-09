@@ -17,10 +17,11 @@ module.exports.addStore = async (req, res) => {
   try {
     const storeSchema = Joi.object({
       storeName: Joi.string().required(),
+      isActive: Joi.number().required(),
     });
     try {
       await storeSchema.validateAsync(req.body);
-      const resp = await query(addStoreQuery(req.body.storeName));
+      const resp = await query(addStoreQuery(req.body.storeName, req.body.isActive));
       const rows = mysqlSingleResponseHandler(resp);
       responseHandler.successResponse(
         res,
@@ -66,11 +67,12 @@ module.exports.updateStore = async (req, res) => {
     const storeSchema = Joi.object({
       storeName: Joi.string().required(),
       storeID: Joi.number().required(),
+      isActive: Joi.number().required(),
     });
     try {
       await storeSchema.validateAsync(req.body);
       const resp = await query(
-        updateStoreQuery(req.body.storeName, req.body.storeID)
+        updateStoreQuery(req.body.storeName,req.body.isActive, req.body.storeID)
       );
       const rows = mysqlSingleResponseHandler(resp);
       responseHandler.successResponse(

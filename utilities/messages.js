@@ -7,7 +7,7 @@ exports.responseMessages = {
   updateBrandSuccessfully: " Successfully Updated Brand Category",
   updateSalesSuccessfully: " Successfully Updated Sales Category",
   getStoreSuccessfully: "Get All Brand List",
-  updateStoreSuccessfully: "Category Updated Successfully",
+  updateStoreSuccessfully: "Store Updated Successfully",
   getCompanyDetails: "Get Company Details",
   addProduct: "Product Added Successfully",
   updateProduct: "Product Updated Successfully",
@@ -15,5 +15,6 @@ exports.responseMessages = {
   getBrandSuccessfully: "Get All Brand List",
   fileUpload: "File Uploaded Successfully",
   getSales: "Get All Sales List",
-  getInvoice:"Get All Invoice List"
+  getInvoice:"Get All Invoice List",
+  storeActive: "Your Store is inactive.Contact Admin"
 };
