@@ -620,3 +620,542 @@
   ],
   timestamp: '2023-03-09 09:39:54'
 }
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Mar 09 2023 14:25:26 GMT+0530 (India Standard Time),
+      state ="Chandigarh",
+    ' at line 2
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at Socket.emit (node:domain:475:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.updateInvoice (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\invoice.ctrl.js:97:28)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Mar 09 2023 14:25:26 GMT+0530 (India Standard Time),\n" +
+      '    state ="Chandigarh",\n' +
+      "  ' at line 2",
+    sqlState: '42000',
+    index: 1,
+    sql: 'Delete from invoiceProducts where invoiceProducts.invoiceMasterID=2;\n' +
+      '    Update invoiceMaster set \n' +
+      '    invoiceNumber =1,\n' +
+      '    invoiceDate =Thu Mar 09 2023 14:25:26 GMT+0530 (India Standard Time),\n' +
+      '    state ="Chandigarh",\n' +
+      '    customerName ="Hari Hara Manibalan S",\n' +
+      '    customerMobile ="09486466203",\n' +
+      '    customerAddress ="88F, Nandhavana Street, Thiruthangal",\n' +
+      '    gst ="11234567",\n' +
+      '    email ="hariharamanibalan72@gmail.com",\n' +
+      '    totalNoofProducts =2,\n' +
+      '    subTotal ="1110",\n' +
+      '    SGST =1,\n' +
+      '    CGST =2,\n' +
+      '    IGST =0,\n' +
+      '    total ="1143.3"    \n' +
+      '    where invoiceMasterID = 2;\n' +
+      '    Insert into invoiceProducts \n' +
+      '        (invoiceMasterID, productName, productQty, productCost) \n' +
+      '      values \n' +
+      '        (2, "Kuruvi", 3,"20");Insert into invoiceProducts \n' +
+      '        (invoiceMasterID, productName, productQty, productCost) \n' +
+      '      values \n' +
+      '        (2, "Sparklerd", 2,"525");\n' +
+      '    '
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Mar 09 2023 14:25:26 GMT+0530 (India Standard Time),\n" +
+    '    state ="Chandigarh",\n' +
+    "  ' at line 2\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Mar 09 2023 14:25:26 GMT+0530 (India Standard Time),\n" +
+    '    state ="Chandigarh",\n' +
+    "  ' at line 2\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at Socket.emit (node:domain:475:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.updateInvoice (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\invoice.ctrl.js:97:28)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Mar 09 2023 14:25:26 GMT+0530 (India Standard Time),\n" +
+    '    state ="Chandigarh",\n' +
+    "  ' at line 2\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at Socket.emit (node:domain:475:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.updateInvoice (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\invoice.ctrl.js:97:28)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Thu Mar 09 2023 14:25:26 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 21028,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 35328000,
+      heapTotal: 32493568,
+      heapUsed: 29675056,
+      external: 2038562,
+      arrayBuffers: 75382
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 105371 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:domain',
+      function: 'Socket.emit',
+      line: 475,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\invoice.ctrl.js',
+      function: 'module.exports.updateInvoice',
+      line: 97,
+      method: 'updateInvoice',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-03-09 14:25:26'
+}
+{
+  error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Mar 09 2023 14:30:37 GMT+0530 (India Standard Time),
+      state ="Sikkim",
+      cu' at line 2
+      at Query.Sequence._packetToError (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+      at Query.ErrorPacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+      at Protocol._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+      at Parser._parsePacket (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:433:10)
+      at Parser.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Parser.js:43:10)
+      at Protocol.write (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:88:28)
+      at Socket.<anonymous> (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Connection.js:526:10)
+      at Socket.emit (node:events:527:28)
+      at Socket.emit (node:domain:475:12)
+      --------------------
+      at Pool.query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\node_modules\mysql\lib\Pool.js:199:23)
+      at C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:6:17
+      at new Promise (<anonymous>)
+      at query (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\helper\executequery.js:5:12)
+      at module.exports.updateInvoice (C:\Users\a861686\Downloads\POS\pos-backend\POS-services\app\controller\invoice.ctrl.js:97:28)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Mar 09 2023 14:30:37 GMT+0530 (India Standard Time),\n" +
+      '    state ="Sikkim",\n' +
+      "    cu' at line 2",
+    sqlState: '42000',
+    index: 1,
+    sql: 'Delete from invoiceProducts where invoiceProducts.invoiceMasterID=4;\n' +
+      '    Update invoiceMaster set \n' +
+      '    invoiceNumber =3,\n' +
+      '    invoiceDate =Thu Mar 09 2023 14:30:37 GMT+0530 (India Standard Time),\n' +
+      '    state ="Sikkim",\n' +
+      '    customerName ="Hari Hara Manibalan.S",\n' +
+      '    customerMobile ="09486005277",\n' +
+      '    customerAddress ="address",\n' +
+      '    gst ="2345678987",\n' +
+      '    email ="hariharamanibalan72_ec@mepcoeng.ac.in",\n' +
+      '    totalNoofProducts =3,\n' +
+      '    subTotal ="660",\n' +
+      '    SGST =2,\n' +
+      '    CGST =0,\n' +
+      '    IGST =0,\n' +
+      '    total ="673.2"    \n' +
+      '    where invoiceMasterID = 4;\n' +
+      '    Insert into invoiceProducts \n' +
+      '        (invoiceMasterID, productName, productQty, productCost) \n' +
+      '      values \n' +
+      '        (4, "Kuruvi", 3,"20");Insert into invoiceProducts \n' +
+      '        (invoiceMasterID, productName, productQty, productCost) \n' +
+      '      values \n' +
+      '        (4, "Bijili1", 2,"200");Insert into invoiceProducts \n' +
+      '        (invoiceMasterID, productName, productQty, productCost) \n' +
+      '      values \n' +
+      '        (4, "New", 2,"100");\n' +
+      '    '
+  },
+  level: 'error',
+  message: "uncaughtException: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Mar 09 2023 14:30:37 GMT+0530 (India Standard Time),\n" +
+    '    state ="Sikkim",\n' +
+    "    cu' at line 2\n" +
+    "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Mar 09 2023 14:30:37 GMT+0530 (India Standard Time),\n" +
+    '    state ="Sikkim",\n' +
+    "    cu' at line 2\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at Socket.emit (node:domain:475:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.updateInvoice (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\invoice.ctrl.js:97:28)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  stack: "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Mar 09 2023 14:30:37 GMT+0530 (India Standard Time),\n" +
+    '    state ="Sikkim",\n' +
+    "    cu' at line 2\n" +
+    '    at Query.Sequence._packetToError (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n' +
+    '    at Query.ErrorPacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:79:18)\n' +
+    '    at Protocol._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:291:23)\n' +
+    '    at Parser._parsePacket (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:433:10)\n' +
+    '    at Parser.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js:43:10)\n' +
+    '    at Protocol.write (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:88:28)\n' +
+    '    at Socket.<anonymous> (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js:526:10)\n' +
+    '    at Socket.emit (node:events:527:28)\n' +
+    '    at Socket.emit (node:domain:475:12)\n' +
+    '    --------------------\n' +
+    '    at Pool.query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js:199:23)\n' +
+    '    at C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:6:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at query (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js:5:12)\n' +
+    '    at module.exports.updateInvoice (C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\invoice.ctrl.js:97:28)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  exception: true,
+  date: 'Thu Mar 09 2023 14:30:38 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 19364,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v16.15.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\server.js'
+    ],
+    memoryUsage: {
+      rss: 57647104,
+      heapTotal: 30134272,
+      heapUsed: 27258096,
+      external: 1218727,
+      arrayBuffers: 65257
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 105683 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: null,
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js',
+      function: 'Query.Sequence._packetToError',
+      line: 47,
+      method: '_packetToError',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js',
+      function: 'Query.ErrorPacket',
+      line: 79,
+      method: 'ErrorPacket',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol._parsePacket',
+      line: 291,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser._parsePacket',
+      line: 433,
+      method: '_parsePacket',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Parser.js',
+      function: 'Parser.write',
+      line: 43,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\protocol\\Protocol.js',
+      function: 'Protocol.write',
+      line: 38,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 88,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Connection.js',
+      function: null,
+      line: 526,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 527,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:domain',
+      function: 'Socket.emit',
+      line: 475,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: null,
+      file: '    --------------------',
+      function: null,
+      line: null,
+      method: null,
+      native: null
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\node_modules\\mysql\\lib\\Pool.js',
+      function: 'Pool.query',
+      line: 199,
+      method: 'query',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'new Promise',
+      line: null,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\helper\\executequery.js',
+      function: 'query',
+      line: 5,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\a861686\\Downloads\\POS\\pos-backend\\POS-services\\app\\controller\\invoice.ctrl.js',
+      function: 'module.exports.updateInvoice',
+      line: 97,
+      method: 'updateInvoice',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 96,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-03-09 14:30:38'
+}

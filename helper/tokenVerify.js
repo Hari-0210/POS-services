@@ -27,8 +27,8 @@ module.exports = {
           if (previousToken.jwt != bearerToken) {
             responseHandler.errorResponse(
               res,
-              "Unauthorized Request",
-              "Unauthorized Request"
+              "User Login from different browser. Please Login Again",
+              "User Login from different browser. Please Login Again"
             );
             return
           }
